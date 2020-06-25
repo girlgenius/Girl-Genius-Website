@@ -336,6 +336,17 @@ html, body {
   .orb {
     width: 100px;
   }
+  .footer-image {
+    display: block;
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+  }
+  .footer-logo > a:hover > img {
+    transform: scale(1.25);
+}
 }
 @media screen and (min-width: 600px) {
   .circle {
@@ -374,6 +385,18 @@ html, body {
   .orb {
     width: 120px;
   }
+  .footer-image {
+    display: block;
+    max-width:1000px;
+    max-height:1000px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    transform: scale(1.9)
+  }
+  .footer-logo > a:hover > img {
+    transform: scale(2.25);
+}
 } 
 
 .sponsorsimages{ 
@@ -1124,10 +1147,6 @@ footer h4 {
     transform: rotate(-135deg) translateY(15px) translateX(15px);
 }
 
-.footer-logo > a:hover > img {
-    transform: scale(1.25);
-}
-
 .footer-logo > a > span:first-child {
     opacity: 0.4;
 }
@@ -1157,9 +1176,6 @@ footer h4 {
     transform: rotate(-135deg) translateY(15px) translateX(15px);
 }
 
-.footer-logo > a:hover > img {
-    transform: scale(1.25);
-}
 
 .site {
     width: 3.5em;
