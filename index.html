@@ -91,7 +91,12 @@
 
     <header>
       <div class="overlay"></div>
-	 <video autoplay loop muted playsinline>
+      <video
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+      >
         <source
           src="websitevidfinal.mp4"
           type="video/mp4"
@@ -113,7 +118,7 @@
             </p>
             <br />
             <a
-              href="https://issuu.com/girlgeniusmagazine/docs/girlgeniusissuethree"
+              href="https://forms.gle/p3RgSLq6gmdJmVRQ8"
               class="btn btn-outline-light empower-btn"
               target="_blank"
               >Register</a
@@ -133,7 +138,9 @@
         <div class="row">
           <div class="col-lg-12 col-sm-12 col-md-12">
             <div class="section-heading">
-              <h1 class="learn-build" align="center" style="margin-bottom: 2%;">
+              <!-- section-header -->
+              <h1 class="learn-build"
+               align="center" style="margin-bottom: 2%;">
                 🙌🏻 LEARN, BUILD, AND THRIVE IN STEAM WITH GIRL GENIUS
               </h1>
               <p align="center" style="font-size: 150%;">
@@ -144,6 +151,7 @@
                 the next generation of female
                 leaders worldwide.
               </p>
+              <span id = "about"></span>
             </div>
           </div>
         </div>
@@ -151,14 +159,14 @@
     </section>
 
   <section class="enable-to-tickets">
-   <section id = "about"  class="section-padding">
+   <section  class="section-padding">
      <h3 class="learn-build" align="center" style = "margin-top: 5%; margin-bottom: 2%;" >
                 👩‍🎓 BRIDGING THE GENDER GAP IN STEM
               </h3>
 
     <a href = "http://bit.ly/ggconference"><img
                 src="CONFERENCE.gif"
-                style="width: 90%; display: block; margin-left: auto;  margin-right: auto;"
+                style="width: 80%; display: block; margin-left: auto;  margin-right: auto;"
               /></a>
     </section> 
 
@@ -182,20 +190,23 @@
  
        </div>
       </div>
+      <span  id = "schedule"></span>
         <br><br><br>
   </div>
 </div>
 
+
+
     <!-- Page Content -->
-  <div class="section" id="schedule">
+  <div class="section">
       <div class="container1">
         <div class="container text-center">
           <div class="row">
-            <div class="col-6" style = "width: 100%;padding: 0; margin:0">
+            <div class="col-6" style = "width: 100%;padding: 0; margin:0;">
               <h3 class="atgg" align="left" style = "margin-bottom: 5%;" onclick = "myfunction0()">🕑 SCHEDULE</h3>
 
               <div class="column">
-                <button class="accordion" id="event1" style = "color: #000; width: 100%;padding: 0; margin: 0;" onclick = "myfunction1()">
+                <button class="accordion" id="event1" onclick = "myFunction1()">
                  11:00 - 12:00 PM PST NETWORKING SESSION
                 </button>
                 <div class="panel">
@@ -205,13 +216,13 @@
                 </div>
 
                 <button class="accordion" id="event2" >12:00 - 12:30 PM PST  KEYNOTE BY UBISOFT RECRUITERS</button>
-                <div class="panel">
+                <div class="panel" onclick = "myFunction2()">
                   <p align="left" class="faqstext">
                     Ubisoft Entertainment SA is a French video game company headquartered in Montreuil with several development studios across the world. This keynote will be lead by Ashley Swisher, a talent acquisition specialist, who will be discussing how to approach recruiters (in person and virtual) and provide insight on how to apply to jobs successfully.
                   </p>
                 </div>
 
-                <button class="accordion" id="event3">12:30 - 1:30 PM PST WOMEN IN STEAM PANEL</button>
+                <button class="accordion" id="event3" onclick = "myFunction3()" >12:30 - 1:30 PM PST WOMEN IN STEAM PANEL</button>
                 <div class="panel">
                   <p align="left" class="faqstext">
                     <b>🌟Jupiter Jones:</b> Astrophysics student, Scientist-Astronaut candidate, Possum 13 ambassador. Jupiter Jones is a science communicator and women in STEM advocate from Toronto Canada. 
@@ -231,13 +242,13 @@
                   </p>
                 </div>
 
-                <button class="accordion" id="event4">1:30 - 2:30 PM PST BREAKING INTO TECHNOLOGY</button>
+                <button class="accordion" id="event4" onclick = "myFunction4()">1:30 - 2:30 PM PST BREAKING INTO TECHNOLOGY</button>
                 <div class="panel">
                   <p align="left" class="faqstext">
                    Workshop lead by Belen Curcio, a solution architect and field engineer at Vercel. More information coming soon!
                   </p>
                 </div>
-                <button class="accordion" id="event5">2:30 - 3:30 PM PST COLLEGE ADMISSIONS PANEL</button>
+                <button class="accordion" id="event5" onclick = "myFunction5()">2:30 - 3:30 PM PST COLLEGE ADMISSIONS PANEL</button>
                 <div class="panel">
                   <p align="left" class="faqstext">
                     <b>🌟Madison Ramos (Incoming Freshman At Caltech):</b> Planning to major in CS with a possible double major in Math or BEM (Business, Engineering, and Management)
@@ -258,7 +269,7 @@
                     <b>🌟Caitlyn Stanton (Postgrad At Cornell University): </b> Degree in electrical and computer engineering, and a double minor in computer science and business. She will be pursuing her Masters of Engineering in the same degree this fall. 
                   </p>
                 </div>
-                <button class="accordion" id="event6">
+                <button class="accordion" id="event6" onclick = "myFunction6()">
                  3:30 - 4:30 PM PST INTRO TO ANIMATION
                 </button>
                 <div class="panel">
@@ -274,7 +285,7 @@
                   </p>
                 </div>
 
-                 <button class="accordion" id="event7">
+                 <button class="accordion" id="event7" onclick = "myFunction7()">
                  4:30 - 5:30 PM PST PRE-MED PANEL
                 </button>
                 <div class="panel">
@@ -284,7 +295,7 @@
                   </p>
                 </div>
 
-                 <button class="accordion" id="event8">
+                 <button class="accordion" id="event8" onclick = "myFunction8()">
                  5:30 - 6:30 PM HOW TO GET RESEARCH INTERNSHIPS 
                 </button>
                 <div class="panel">
@@ -294,7 +305,7 @@
                   </p>
                 </div>
 
-                 <button class="accordion" id="event9">
+                 <button class="accordion" id="event9" onclick = "myFunction9()">
                  6:30 - 7:30 PM PST INTRO TO AR/VR
                 </button>
                 <div class="panel">
@@ -338,6 +349,7 @@ for (i = 0; i < acc.length; i++) {
     </div>
 
    <section>
+     <span  id = "impact"></span>
       <header class="masthead2">
         <div class="container h-100">
           <div
@@ -345,36 +357,36 @@ for (i = 0; i < acc.length; i++) {
           >
             <div class="col-lg-10 align-self-end">
             </div>
-            <div class="col-lg-8 align-self-baseline">
-              <h1 id = "impact" class="text-white-75 font-weight-light mb-5" style = "color: #fff; font-size: 600%; margin-top: -30px;">
+            <div class="col-lg-8 align-self-baseline" style = "margin: 5%";>
+              <h1 class="text-white-75 font-weight-light mb-5 section-header" style = "color: #fff; text-align: center;">
                  OUR DIFFERENCE
               </h1> 
              
               <div class="numbers" style="padding-right: 5px; padding-left: 5px; padding-bottom: 10px; margin-top: -20px; color: #fff;">
           <div class="row">
-            <div class="col-4 text-black text-center">
-              <span class="counter">6500</span><br />
-              Girls impacted through social media and our virtual events.
+            <div class="col-4 text-black text-center impact-item">
+              <span class="counter">7200</span><br />
+              Girls impacted through our social media and  virtual events.
             </div>
-            <div class="col-4 text-black text-center">
+            <div class="col-4 text-black text-center impact-item">
               <span class="counter">4000</span><br />
               Views on our YouTube channel and IGTV video series
             </div>
-            <div class="col-4 text-black text-center">
+            <div class="col-4 text-black text-center impact-item">
               <span class="counter">3000</span><br />
               Reads on all three of our magazine issues
-            </div>
-            <div class="col-4 text-black text-center">
-              <span class="counter">917</span> <br />
+            </div><br><br><br>
+            <div class="col-4 text-black text-center impact-item">
+              <span class="counter">1170</span> <br />
               Workshop attendees from 26 states & 15 countries
             </div>
-            <div class="col-4 text-black text-center">
+            <div class="col-4 text-black text-center impact-item">
               <span class="counter">260</span> <br />
               Team contributors since Issue I
             </div>
-            <div class="col-4 text-black text-center" style="margin-bottom: 70px;">
-              <span class="counter">56</span><br />
-              Women In Steam featured on our platform
+            <div class="col-4 text-black text-center" style="margin-bottom: 70px; impact-item">
+              <span class="counter">57</span><br />
+              Women in STEAM featured on our platform
             </div>
           </div>
           <br>
@@ -383,6 +395,7 @@ for (i = 0; i < acc.length; i++) {
 
             </div>
           </div>
+           <span id = "team"></span>
         </div>
       </header>
     </section>
@@ -613,7 +626,7 @@ for (i = 0; i < acc.length; i++) {
         <div class="container text-center">
           <div class="row">
             <div class="col-6">
-              <h3 class="atgg" align="left">🙋🏻 ALL SPONSORSHIPS SUPPORT GIRLS IN STEM </h3>
+              <h3 class="atgg section-header" align = "left">🙋🏻 ALL SPONSORSHIPS SUPPORT GIRLS IN STEM </h3>
               <div class="column">
                 <br/>
                  <p align="left" style = "font-size: 125%";>
@@ -624,7 +637,7 @@ for (i = 0; i < acc.length; i++) {
                    <br/>
                    <a align = "left"
                 target="_blank"
-                href="https://drive.google.com/file/d/1hac-CTC9RkbGy4TGTIggEphfReiXaser/view?usp=sharing"><button type="button">
+                href="https://drive.google.com/file/d/1hac-CTC9RkbGy4TGTIggEphfReiXaser/view?usp=sharing"><button type="button" class = "btn btn-outline empower-btn-dark">
                   Sponsorship Prospectus
                 </button></a>
                </div>
@@ -667,15 +680,14 @@ for (i = 0; i < acc.length; i++) {
     </div> -->
 
     <section>
-      <center>
         <div class="sponsors">
           <div class="section-heading">
-            <h1 align="center" class="learn-build" style="margin: 5%; ">
+            <h1 align="center" class="learn-build section-header" style="margin: 5%; ">
               💰 CONFERENCE SPONSORS
             </h1>
           </div>
-          <center>
-            <div class="row2">
+            <div class = "sponsors-grid">
+              <div class = "row2">
               <div class="column2">
                 <img
                   class="sponsorsimages"
@@ -701,10 +713,7 @@ for (i = 0; i < acc.length; i++) {
                 />
               </div>
             </div>
-          </center>
-
-          <center>
-            <div class="row2">
+              <div class = "row2">
               <div class="column2">
                 <img
                   class="sponsorsimages"
@@ -730,11 +739,8 @@ for (i = 0; i < acc.length; i++) {
                   src="https://cdn.glitch.com/f92664f8-7445-444e-8a68-1fa484daef7d%2F%5BADD%5D%20InterviewCake.png?v=1580856928506"
                 />
               </div>
-            </div>
-          </center>
-
-          <center>
-            <div class="row2">
+              </div>
+              <div class = "row2">
               <div class="column2">
                 <img
                   class="sponsorsimages"
@@ -760,11 +766,11 @@ for (i = 0; i < acc.length; i++) {
                   src="https://cdn.glitch.com/9a69f7f7-63a6-4a5a-8dfd-05cfd800e732%2FAlpha%20(1).png?v=1592650277457"
                 />
               </div>
+              </div>
             </div>
-          </center>
+          </div>
         </div>
-      </center>
-    </section>
+      </section>
 
     <!-- <div class="section">
       <footer class="footer">
@@ -842,25 +848,18 @@ for (i = 0; i < acc.length; i++) {
         <footer>
       <div id="footer-main">
         <div id="past-sites">
-          <h4>CONTACT GIRL GENIUS</h4>
-          <!-- <div class="site" class="social">
-            <span class="bar"></span>
-         <a href="mailto:webdesign@example.com">SPONSORSHIP</a>
-          </div> -->
+          <h4>Contact Girl Genius</h4>
            <div class="social" style="margin-left:20px">
-            <a href="mailto:webdesign@example.com">SPONSORSHIP</a>
+            <a href="mailto:nandini@girlgeniusmag.tech" target="_blank">Sponsorship</a>
             <span class="bar"></span>
-            <span class="social-icon"><img src="https://www.iconsdb.com/icons/preview/white/mail-xxl.png" /></span>
           </div>
           <div class="social" style="margin-left:20px">
-            <a href="mailto:webdesign@example.com">Partnerships</a>
+            <a href="mailto:agnes@girlgeniusmag.tech target="_blank"">Partnerships</a>
             <span class="bar"></span>
-            <span class="social-icon"><img src="https://www.iconsdb.com/icons/preview/white/mail-xxl.png" /></span>
           </div>
            <div class="social" style="margin-left:20px">
-            <a href="mailto:webdesign@example.com">General Q's</a>
+            <a href="mailto:info@girlgeniusmag.tech" target="_blank">General Inquiries</a>
             <span class="bar"></span>
-            <span class="social-icon"><img src="https://www.iconsdb.com/icons/preview/white/mail-xxl.png" /></span>
           </div>
           <!-- <div class="site">
             <span class="bar"></span>
@@ -882,8 +881,8 @@ for (i = 0; i < acc.length; i++) {
             <span></span>
             <br />
             <span></span> -->
-            <img id="logo" 
-            src="https://cdn.glitch.com/9a69f7f7-63a6-4a5a-8dfd-05cfd800e732%2FGGLogo.png?v=1592629294115" />
+            <img style = "width: 100%; height: 100%"
+            src="image (41).png" />
           </a>
         </div>
         <div id="social-media">
@@ -904,14 +903,14 @@ for (i = 0; i < acc.length; i++) {
             <span class="social-icon"><img src="twitter.png" /></span>
           </div>
           <div class="social">
-            <a href="" target="_blank">Linkedin</a>
+            <a href="https://www.linkedin.com/company/girl-genius-magazine/" target="_blank">Linkedin</a>
             <span class="bar"></span>
-            <span class="social-icon"><img src="https://www.iconsdb.com/icons/preview/white/linkedin-3-xxl.png" /></span>
+            <span class="social-icon"><img src="linkedin.png" /></span>
           </div>
         </div>
       </div>
       <div id="copyright">
-        Copyright &copy; 2020 Girl Genius. All rights reserved.
+        Copyright &copy; 2020 - 2021 Girl Genius. All rights reserved.
        
       </div>
     </footer>
