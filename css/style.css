@@ -1,3 +1,5 @@
+/*INITIAL CODE & HEADER */
+
 * {
   font-family: 'Sofia Pro', sans-serif;
   box-sizing: border-box;
@@ -20,7 +22,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   margin: 2%;
   
 }
-#sponsorus .col-6{
+#sponsorus{
   position: relative;
 
 }
@@ -53,9 +55,7 @@ font-size: 300%;
 }
 
 
-.col-6{
-  padding: 2%;
-}
+
 
 
 header {
@@ -98,18 +98,31 @@ header .overlay {
   z-index: 1;
 }
 
-@media (pointer: coarse) and (hover: none) {
+@media screen and (max-width: 600px) {
+  .column200 {
+    width: 50%;
+  }
+}
+
+/* @media (pointer: coarse) and (hover: none) {
   header {
     background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
   }
   header video {
     display: none;
   }
-}
+} */
 
 #intro{
   padding: 5%;
   background: #D4F0FD;
+}
+
+@media screen and (max-width: 600px) {
+  .learn-build {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
 }
 
 #tickets{
@@ -226,11 +239,8 @@ header .overlay {
   clear: both;
 }
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column200 {
-    width: 50%;
-  }
-}
+
+
 .linkToEmail:hover{
   display: inline;
   text-decoration: none;
@@ -348,6 +358,19 @@ html, body {
   .footer-logo > a:hover > img {
     transform: scale(1.25);
 }
+.schedule-image-up {
+      display: block;
+    max-width: 430px;
+    max-height: 350px;
+    padding: 20px;
+}
+.schedule-img-wrapper {
+  text-align: center;
+}
+.schedule-image-side {
+  display: none;
+}
+
 }
 @media screen and (min-width: 600px) {
   .circle {
@@ -398,6 +421,26 @@ html, body {
   }
   .footer-logo > a:hover > img {
     transform: scale(2.25);
+}
+.schedule-image-up {
+  display: none;
+  
+}
+.schedule-image-side {
+  width: 100%;
+  padding: 20px;
+  display: block;
+}
+.col-6 {
+  position: relative;
+  padding: 2%;
+  margin: 0px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+    -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 } 
 
@@ -546,10 +589,6 @@ button:hover{
   height: auto;
 }
 
-.col-6{
-  padding: 0px;
-  margin: 0px;
-}
 .container{
   margin: 0px auto;
   padding: 0px;
@@ -836,6 +875,13 @@ a.navbar-brand {
 
 a.nav-link {
     color: white !important;
+    background-color: #ccaef4;
+    position: relative;
+    margin-left: -30px;
+    padding-left: 40px;
+    left: 20px;
+    margin-right: -20px;
+    width: 120%;
 }
 
 .jumbotron-button {
@@ -1255,3 +1301,4 @@ footer h4 {
   color: #fff;
   text-decoration: none;
 }
+
