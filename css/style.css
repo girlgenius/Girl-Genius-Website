@@ -98,11 +98,6 @@ header .overlay {
   z-index: 1;
 }
 
-@media screen and (max-width: 600px) {
-  .column200 {
-    width: 50%;
-  }
-}
 
 /* @media (pointer: coarse) and (hover: none) {
   header {
@@ -124,7 +119,17 @@ header .overlay {
     margin-bottom: 5%;
   }
 }
-
+@media screen and (max-width: 600px) {
+  .column200 {
+    width: 50%;
+  }
+  .navbar-nav{
+    position: relative;
+    background-color: #ccaef4;
+    padding: 0px 0px 15px 15px;
+  }
+  
+}
 #tickets{
   padding-right: 100px;
   padding-left: 100px;
@@ -334,6 +339,7 @@ html, body {
   }
   .top-header {
     font-size: 3.6rem;
+    padding: 50px;
   }
   .conference-team-header {
     font-size: 3rem;
@@ -388,6 +394,7 @@ html, body {
   }
   .top-header {
     font-size: 5rem;
+    padding: 50px;
   }
   .conference-team-header {
     font-size: 400%;
@@ -858,7 +865,6 @@ button:hover{
     -ms-transition: all 0.6s ease-out;
     transition: all 0.6s ease-out;
 }
-
 .navbar.scrolled {
     background: #ccaef4; /* IE */
     background: #ccaef4; /* NON-IE */
@@ -867,21 +873,27 @@ button:hover{
 .navbar {
     height: 5rem;
     color: white !important;
+    width: 100%;
 }
 
 a.navbar-brand {
     color: white !important;
 }
-
+.navbar-nav{
+  position: relative;
+}
+navbar-nav{
+  white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+nav-link{
+  position: relative;
+  display:inline-block;
+}
 a.nav-link {
+  display:inline-block;
     color: white !important;
-    background-color: #ccaef4;
-    position: relative;
-    margin-left: -30px;
-    padding-left: 40px;
-    left: 20px;
-    margin-right: -20px;
-    width: 120%;
 }
 
 .jumbotron-button {
@@ -974,11 +986,16 @@ a.nav-link {
 }
 
 .navbar-toggler {
-    background-color: #A3826C !important;
-    border: 1px solid #A3826C !important;
+  position: relative;
+  right: 20%;
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
 }
 
 .navbar-toggler-icon {
+  position: absolute;
+  top: -10px;
+  right: -50px;
     color: white !important;
 }
 
@@ -991,6 +1008,7 @@ a.nav-link {
 .header-logo {
     position: relative;
     top: -6px; 
+    margin-right: -50px;
 }
 
 .hover_img a { position:relative; }
@@ -1301,4 +1319,3 @@ footer h4 {
   color: #fff;
   text-decoration: none;
 }
-
