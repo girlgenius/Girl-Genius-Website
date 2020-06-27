@@ -449,6 +449,7 @@ html, body {
   flex: 0 0 50%;
   max-width: 50%;
 }
+
 } 
 
 .sponsorsimages{ 
@@ -680,11 +681,20 @@ button:hover{
  .counter {
     text-align: center;
     position: relative;
+ }
+
+.counter-small {
     left: -5%;
      font-size: 500%;
      padding: 0% 10%;
      margin: 0% 10%;
- }
+}
+.counter-large {
+    left: -8%;
+     font-size: 500%;
+     padding: 0% 10%;
+     margin: 0% 10%;
+}
  .impact-item{
  }
  @media only screen and (max-width: 900px){
@@ -974,12 +984,12 @@ a.nav-link {
     text-decoration: underline;
    }
 
-   .footer-social-icon {
+.footer-social-icon {
        padding-right: .5rem;
        color: white;
        width: 5em; 
-       height: 5em' 
-   }
+       height: 5em;
+}
 
 .footer-text {
     padding-top: 4rem;
@@ -1318,4 +1328,8 @@ footer h4 {
 .social a:hover {
   color: #fff;
   text-decoration: none;
+}
+
+.col-4 {
+  position:relative;width:100%;padding-right:35px;padding-left: 50px;
 }
