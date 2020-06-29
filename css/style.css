@@ -18,6 +18,13 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 @font-face {font-family: "Sofia Pro"; src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot"); src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff") format("woff"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.svg#Sofia Pro") format("svg"); }
 
+
+#nav-mobile {
+display: none;
+}
+.nav-mobile-header {
+display: none;
+}
 .container1 {
   margin: 2%;
   
@@ -114,21 +121,24 @@ header .overlay {
 }
 
 @media screen and (max-width: 600px) {
-  .learn-build {
-    margin-top: 5%;
-    margin-bottom: 5%;
+  #impact{
+    padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 600px) {
   .column200 {
     width: 50%;
+      float: left;
+      padding: 1%;
   }
+  
+}
+@media screen and (max-width: 550px) {
   .navbar-nav{
     position: relative;
     background-color: #ccaef4;
     padding: 0px 0px 15px 15px;
   }
-  
 }
 #tickets{
   padding-right: 100px;
@@ -222,13 +232,6 @@ header .overlay {
   padding: 1%;
 }
 
-
-.column200 {
-  float: left;
-  width: 25%;
-  padding: 1%;
-}
-
 .sponsors-grid{
   display: flex;
   flex-direction: column;
@@ -316,9 +319,6 @@ html, body {
   margin: 2.5% 0%;
   width: 90%;
 }
-.sponsorsimages{
-  width: 100%;
-}
 
 /* Clear floats after the columns */
 .row2::after {
@@ -336,6 +336,7 @@ html, body {
   }
   .sponsorsimages {
     width: 100%;
+    padding: 30px;
   }
   .top-header {
     font-size: 3.6rem;
@@ -382,6 +383,19 @@ html, body {
   .circle {
     width: 70%;
   }
+  .col-6 {
+    padding-right: 15px;
+  padding-left: 15px;
+    -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  }
+
+    .column200 {
+  float: left;
+  width: 25%;
+  padding: 1%;
+}
   .sponsorsimages {
     width: 100%;
     padding: 30px;
@@ -402,6 +416,8 @@ html, body {
   .learn-build {
     font-size: 360%;
     width: 100%;
+    margin: 5%;
+  }
   }
   .column100 {
     float: left;
@@ -428,7 +444,7 @@ html, body {
   }
   .footer-logo > a:hover > img {
     transform: scale(2.25);
-}
+  }
 .schedule-image-up {
   display: none;
   
@@ -438,22 +454,10 @@ html, body {
   padding: 20px;
   display: block;
 }
-.col-6 {
-  position: relative;
-  padding: 2%;
-  margin: 0px;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-    -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
-}
 
 } 
 
 .sponsorsimages{ 
-  width: 20vw;
   transition: all .2s ease-in-out;
 }
 .sponsorsimages:hover{ 
@@ -692,18 +696,13 @@ button:hover{
 .counter-large {
     left: -8%;
      font-size: 500%;
-     padding: 0% 10%;
-     margin: 0% 10%;
+     padding: 0% 0%;
+     margin: 0% 0%;
 }
- .impact-item{
- }
- @media only screen and (max-width: 900px){
-   .counter {
-     font-size: 350%;
-     margin: 0%;
-  }
+.top-num{
+  padding-bottom: 50px;
 }
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1000px){
    .counter {
      font-size: 200%;
      margin: 0%;
@@ -832,6 +831,12 @@ button:hover{
    .empower-btn-dark{
     transform: scale(.8);
   }
+  .col-6 {
+  position: relative;
+  padding: 2%;
+  margin: 0px;
+  width: 100%;
+}
 }
 
  .workshops-btn {
@@ -1317,9 +1322,9 @@ footer h4 {
     opacity: 1;
 }
 
-/* footer */
+/* footer
  transition: max-height 0.2s ease-out;
-}
+*/
 
 .social a {
   text-decoration: none;
@@ -1332,4 +1337,105 @@ footer h4 {
 
 .col-4 {
   position:relative;width:100%;padding-right:35px;padding-left: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .col-4 {
+    padding-bottom: 50px;
+  }
+  .impact{
+      position: relative;
+      height: 10px;
+  }
+}
+#nav-mobile{
+  z-index: 100;
+  position:fixed;
+  top:20px;
+  right: 20px;
+  border-radius:21px;
+  min-width:40px;
+  min-height:40px;
+  overflow:hidden;
+  background-color:#ccaef4;
+}
+#nav-mobile input{
+  display:none;
+}
+#nav-mobile input:checked ~ label span:last-child{
+  display:none;
+}
+#nav-mobile input:not(:checked) ~ label span:first-child{
+  display:none;
+}
+#nav-mobile label{
+  display:block;
+  position:absolute;
+  right:0px;
+  top:0px;
+  user-select:none;
+  width:41px;
+  height:41px;
+  text-align:center;
+  line-height:40px;
+  background:#333;
+  color:white;
+  border-bottom-left-radius:20px;
+  cursor:pointer;
+}
+#nav-mobile ul{
+  overflow:hidden;
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  transition:width 0.5s, height 0.5s;
+  list-style:none;
+}
+#nav-mobile input:checked ~ ul{
+  width:200px;
+  height:180px;
+}
+#nav-mobile ul li a{
+  color:#333;
+  text-transform:uppercase;
+  text-decoration:none;
+  font-family:'Roboto', sans-serif;
+  display:block;
+  width:200px;
+  height:30px;
+  line-height:30px;
+  letter-spacing:2px;
+  text-align:center;
+  transition:color 0.5s, background 0.5s;
+}
+#nav-mobile ul li a:hover{
+  background:#ad87de;
+  color:#333;
+}
+.nav-mobile-header{
+  margin: 30px 20px;
+  font-family: 'Sofia Pro', sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: transparent;
+  z-index: 100;
+}
+@media screen and (max-width: 600px) {
+  .navbar{
+    display: none;
+  }
+  #nav-mobile{
+    display: inline; 
+  }
+  .nav-mobile-header{
+    display: block;
+  }
+  .firstSection{
+    position: relative;
+    top: -80px;
+  }
+}
+html{
+  scroll-behavior: smooth;
 }
