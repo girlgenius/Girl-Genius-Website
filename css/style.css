@@ -18,7 +18,6 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 @font-face {font-family: "Sofia Pro"; src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot"); src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff") format("woff"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.svg#Sofia Pro") format("svg"); }
 
-
 #nav-mobile {
 display: none;
 }
@@ -126,9 +125,10 @@ header .overlay {
   }
 }
 @media screen and (max-width: 600px) {
-  .column200 {
-    width: 50%;
-      float: left;
+  .row200 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
       padding: 1%;
   }
   
@@ -466,21 +466,19 @@ html, body {
 /*
     padding-bottom: 6vw;
     padding: 30px;
-/*  height: 80%;
-  width: 80%;  */
+height: 80%;
+  width: 80%; 
   transition: 0.3s;
   padding-bottom: 5vw;
-  /* -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+-webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); 
   -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
-  /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+ box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); 
 }
+*/
 
-.sponsorsimages:hover {
-  transform: scale(1.1);
-}
+
 .sponsors {
     vertical-align: middle;
-   margin: 2%;
   padding: 1%; 
 }
 
