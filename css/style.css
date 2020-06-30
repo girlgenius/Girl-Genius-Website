@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 @font-face {font-family: "Sofia Pro"; src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot"); src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff") format("woff"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.svg#Sofia Pro") format("svg"); }
 
+
 #nav-mobile {
 display: none;
 }
@@ -60,6 +61,15 @@ font-size: 300%;
   padding: 12px 28px;
 }
 
+
+@media only screen and (max-width: 600px) {
+  .footer-logo > a > img {
+    display: block;
+    max-height: 14vh !important;
+    margin-top: 10px !important;
+    transition: all 0.5s;
+  }
+}
 
 
 
@@ -125,10 +135,9 @@ header .overlay {
   }
 }
 @media screen and (max-width: 600px) {
-  .row200 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
+  .column200 {
+    width: 50%;
+      float: left;
       padding: 1%;
   }
   
@@ -337,6 +346,7 @@ html, body {
   .sponsorsimages {
     width: 100%;
     padding: 30px;
+    transition: 0.2s;
   }
   .top-header {
     font-size: 3.6rem;
@@ -354,6 +364,7 @@ html, body {
   .orb {
     width: 100px;
   }
+
   .footer-image {
     display: block;
     max-width:230px;
@@ -362,6 +373,8 @@ html, body {
     height: auto;
     padding: 20px;
   }
+
+
   .footer-logo > a:hover > img {
     transform: scale(1.25);
 }
@@ -391,14 +404,15 @@ html, body {
   max-width: 50%;
   }
 
-    .column200 {
+  .column200 {
   float: left;
   width: 25%;
   padding: 1%;
-}
+  }
   .sponsorsimages {
-    width: 100%;
-    padding: 30px;
+    width: 80%;
+    padding: 10px;
+    transition: .2s;
   }
   .team {
    padding: 50px;
@@ -417,7 +431,6 @@ html, body {
     font-size: 360%;
     width: 100%;
     margin: 5%;
-  }
   }
   .column100 {
     float: left;
@@ -445,41 +458,35 @@ html, body {
   .footer-logo > a:hover > img {
     transform: scale(2.25);
   }
-.schedule-image-up {
-  display: none;
-  
-}
-.schedule-image-side {
-  width: 100%;
-  padding: 20px;
-  display: block;
-}
-
+  .schedule-image-up {
+    display: none;
+  }
+  .schedule-image-side {
+    width: 100%;
+    padding: 20px;
+    display: block;
+  }
 } 
 
-.sponsorsimages{ 
-  transition: all .2s ease-in-out;
-}
+
 .sponsorsimages:hover{ 
   transform:scale(1.1); 
 }
-/*
-    padding-bottom: 6vw;
-    padding: 30px;
-height: 80%;
-  width: 80%; 
-  transition: 0.3s;
-  padding-bottom: 5vw;
--webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); 
-  -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
- box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); 
-}
-*/
-
 
 .sponsors {
-    vertical-align: middle;
+  vertical-align: middle;
+  margin: 2%;
   padding: 1%; 
+}
+
+
+.footer-image {
+  display: block;
+  max-width:230px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+  padding: 20px;
 }
 
 /*
@@ -1289,6 +1296,11 @@ footer h4 {
     width: calc(7em - 20px);
 }
 
+@media only screen and (min-width: 1025px) {
+.footer-info {
+  margin-left:20px
+}
+}
 
 
 .site > a {
@@ -1308,17 +1320,35 @@ footer h4 {
 .social:hover img {
     /* transform: translateY(-50%); */
 }
-.social-icon > img {
-    opacity: 0;
+
+  .social-icon > img {
     height: 1.5em;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     transition: opacity 0.5s, transform 0.5s;
 }
-.social:hover .social-icon > img {
+
+@media only screen and (max-width: 600px) {  
+  .social-icon > img {
     opacity: 1;
 }
+
+.footer-info {
+  margin-left:5px;
+}
+
+}
+
+@media only screen and (min-width: 1025px) {
+  .social-icon > img {
+    opacity: 0;
+}
+.social:hover .social-icon > img {
+  opacity: 1;
+}
+
+} 
 
 /* footer
  transition: max-height 0.2s ease-out;
