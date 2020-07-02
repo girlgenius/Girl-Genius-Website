@@ -1218,6 +1218,7 @@ footer h4 {
 
   .social-icon > img {
     height: 1.5em;
+    margin-left: 15px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
