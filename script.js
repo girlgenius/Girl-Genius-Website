@@ -1,4 +1,5 @@
 
+
 function myFunction0 () {
   document.getElementById("eventimage").src =
     "smartmockups_kbnd9i8g.png";
@@ -7,6 +8,11 @@ function myFunction0 () {
 function myFunction1 () {
   document.getElementById("eventimage").src =
     "smartmockups_kbnda0ho.png";
+}
+
+function myFunction1a () {
+  document.getElementById("eventimage").src =
+    "smartmockups_kbnd9i8g.png";
 }
 
 function myFunction2 () {
@@ -31,17 +37,17 @@ function myFunction5 () {
 
 function myFunction6 () {
   document.getElementById("eventimage").src =
-    "smartmockups_kbnd9i8g.png";
+    "smartmockups_kc39j41q.png";
 }
 
 function myFunction7 () {
   document.getElementById("eventimage").src =
-    "smartmockups_kbnd9i8g.png";
+    "smartmockups_kc39hvkc.png";
 }
 
 function myFunction8 () {
   document.getElementById("eventimage").src =
-    "smartmockups_kbnd9i8g.png";
+    "smartmockups_kc39jldi.png";
 }
 
 function myFunction9 () {
