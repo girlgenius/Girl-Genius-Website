@@ -398,83 +398,6 @@ html, body {
 }
 
 }
-@media screen and (min-width: 600px) {
-  .circle {
-    width: 70%;
-  }
-  .col-6 {
-    padding-right: 15px;
-  padding-left: 15px;
-    -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
-  }
-
-  .column200 {
-  float: left;
-  width: 25%;
-  padding: 1%;
-
-  }
-  .sponsorsimages {
-    width: 80%;
-    padding: 10px;
-    transition: .2s;
-
-  }
-  .team {
-   padding: 50px;
-  }
-  .sponsors {
-    padding: 50px;
-  }
-  .top-header {
-    font-size: 5rem;
-    padding: 50px;
-  }
-  .conference-team-header {
-    font-size: 400%;
-  }
-  .learn-build {
-    font-size: 360%;
-    width: 100%;
-    margin: 5%;
-  }
-  .column100 {
-    float: left;
-    padding: 10px;
-  }
-
-  .show-mobile {
-    display: none;
-  }
-  .hide-mobile {
-    display: block;
-  }
-  .orb {
-    width: 120px;
-  }
-  .footer-image {
-    display: block;
-    max-width:1000px;
-    max-height:1000px;
-    width: auto;
-    height: auto;
-    padding: 20px;
-    transform: scale(1.9)
-  }
-  .footer-logo > a:hover > img {
-    transform: scale(2.25);
-  }
-  .schedule-image-up {
-    display: none;
-  }
-  .schedule-image-side {
-    width: 100%;
-    padding: 20px;
-    display: block;
-  }
-} 
 
 
 .sponsorsimages:hover{ 
@@ -537,25 +460,7 @@ header.masthead2 {
 header.masthead2 h1 {
   font-size: 3rem;
 }
-@media (min-width: 992px) {
-  header.masthead2 {
-    height: 100vh;
-    min-height: 40rem;
-    padding-top: 72px;
-    padding-bottom: 0;
-  }
-  header.masthead2 p {
-    font-size: 1.15rem;
-  }
-  header.masthead2 h1 {
-    font-size: 3rem;
-  }
-}
-@media (min-width: 1200px) {
-  header.masthead2 h1 {
-    font-size: 4.5rem;
-  }
-}
+
 
 .accordion {
   opacity: 1;
@@ -627,24 +532,6 @@ button:hover{
 #schedpad {
   padding: 3%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* mia  code */
@@ -1472,6 +1359,118 @@ footer h4 {
     top: -80px;
   }
 }
+@media (min-width: 992px) {
+  header.masthead2 {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+  }
+  header.masthead2 p {
+    font-size: 1.15rem;
+  }
+  header.masthead2 h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead2 h1 {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .stickeryou{
+     max-width: 200px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .circle {
+    width: 70%;
+  }
+  .col-6 {
+    padding-right: 15px;
+  padding-left: 15px;
+    -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  }
+
+  .column200 {
+  float: left;
+  width: 25%;
+  padding: 1%;
+  margin-left:auto; 
+    margin-right:auto;
+
+  }
+  .sponsorsimages {
+    width: 80%;
+    padding: 10px;
+    transition: .2s;
+
+  }
+  .team {
+   padding: 50px;
+  }
+  .sponsors {
+    padding: 50px;
+  }
+  .top-header {
+    font-size: 5rem;
+    padding: 50px;
+  }
+  .conference-team-header {
+    font-size: 400%;
+  }
+  .learn-build {
+    font-size: 360%;
+    width: 100%;
+    margin: 5%;
+  }
+  .column100 {
+    float: left;
+    padding: 10px;
+  }
+
+  .show-mobile {
+    display: none;
+  }
+  .hide-mobile {
+    display: block;
+  }
+  .orb {
+    width: 120px;
+  }
+  .footer-image {
+    display: block;
+    max-width:1000px;
+    max-height:1000px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    transform: scale(1.9)
+  }
+  .footer-logo > a:hover > img {
+    transform: scale(2.25);
+  }
+  .schedule-image-up {
+    display: none;
+  }
+  .schedule-image-side {
+    width: 100%;
+    padding: 20px;
+    display: block;
+  }
+} 
+.stickeryou{
+    width: 220%;
+}
+@media screen and (max-width: 1000px) {
+  .stickeryou{
+    width: 150%;
+  }
+}
+
 html{
   scroll-behavior: smooth;
 }
