@@ -59,7 +59,7 @@ a.nav-link {
 
 h1 {
 	font-family: 'Sofia Pro';
-	font-weight: bolder;
+	font-weight: bold;
 	font-size: 60px;
 	color: #614FD2;
 	text-align: left;
@@ -71,7 +71,7 @@ body {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-color: #D6EDFE;
-
+	-webkit-font-smoothing: subpixel-antialiased;
 }
 
 * {
