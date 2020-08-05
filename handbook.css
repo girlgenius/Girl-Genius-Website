@@ -1,0 +1,471 @@
+
+@viewport {
+	width: device-width ;
+	zoom: 1.0 ;
+  }
+
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+	transition: all 0.6s ease-out;
+	font-family: 'Sofia Pro';
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.navbar.scrolled {
+    background: #8d7fe8; 
+}
+
+.navbar {
+    height: 5rem;
+    color: #8d7fe8 !important;
+	width: 100%;
+}
+
+a.navbar-brand {
+	color: #8d7fe8 !important;
+	font-family: 'Sofia Pro';
+}
+
+.navbar-nav{
+  position: relative;
+}
+
+navbar-nav{
+  	white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+nav-link{
+  	position: relative;
+  	display:inline-block;
+}
+
+a.nav-link {
+  	display:inline-block;
+	color: #8d7fe8 !important;
+}
+
+
+@font-face {
+	font-family: "Sofia Pro"; 
+	src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot"); 
+	src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff") format("woff"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.svg#Sofia Pro") format("svg"); 
+}
+
+h1 {
+	font-family: 'Sofia Pro';
+	font-weight: bold;
+	font-size: 60px;
+	color: #614FD2;
+	text-align: left;
+	line-height: 60px;
+}
+
+body {
+	background-image: url(test8.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-color: #D6EDFE;
+
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+p {
+	font-family: 'Sofia Pro';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 20px;
+	color: #614FD2;
+	text-align: left;
+}
+
+.container {
+	margin-top: 100px;
+}
+
+.row {
+	margin-top: 200px;
+	text-align: center;
+	justify-content: center;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.top-image {
+	width: 85%;
+}
+
+
+.discover {
+	background-color: transparent;
+	padding: 10px 20px;
+	color: #7B6BD9;
+	border: 2px solid #7B6BD9;
+	font-family: 'Sofia Pro';
+	text-decoration:none;
+	border-radius: 5px;
+	transition: 0.2s;
+}
+
+.discover:hover {
+	color: #7B6BD9;
+	border: 2px solid #fff;
+	background-color: #fff;
+	text-decoration: none;
+}
+
+.guides-button {
+	background-color: transparent;
+	padding: 10px 20px;
+	color: #FACA78;
+	border: 2px solid #FACA78;
+	font-family: 'Sofia Pro';
+	font-size: 14px;
+	text-decoration:none;
+	border-radius: 5px;
+	transition: 0.2s;
+}
+
+.guides-button:hover {
+	color: #FCF7F4;
+	background-color: #FACA78;
+	text-decoration: none;
+}
+
+.opportunities-button {
+	background-color: transparent;
+	padding: 10px 20px;
+	color: #7B6BD9;
+	border: 2px solid #7B6BD9;
+	font-family: 'Sofia Pro';
+	font-size: 14px;
+	text-decoration:none;
+	border-radius: 5px;
+	transition: 0.2s;
+	text-align: center;
+}
+
+.opportunities-button:hover {
+	color: #7B6BD9;
+	border: 2px solid #fff;
+	background-color: #fff;
+	text-decoration: none;
+}
+
+h2 {
+	font-family: 'Sofia Pro';
+	font-weight: bold;
+	color: #7B6BD9;
+	font-size: 40px;
+}
+
+#guides {
+	margin-top: 230px;
+	padding: 20px;
+}
+
+#opportunities {
+	margin-top: 230px;
+	padding: 20px;
+}
+
+.mini-image {
+	width: 40px;
+	padding: 5px;
+}
+
+.guides-row {
+	margin-top: 40px;
+}
+
+.panel-default>.panel-heading {
+	color: #333;
+	background-color: #fff;
+	border-color: #e4e5e7;
+	padding: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+  
+.panel-default>.panel-heading a {
+	display: block;
+	padding: 10px 15px;
+}
+
+.panel-heading {
+	color: fff;
+}
+
+.highlight .accordion-toggle:after{color:#fff}/* arrow*/
+.panel-heading.highlight .accordion-toggle .indicator{color:#fff}/* plus minus*/
+  
+.panel-default>.panel-heading a:after {
+	content: "";
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	float: right;
+	transition: transform .25s linear;
+	-webkit-transition: -webkit-transform .25s linear;
+}
+  
+.panel-default>.panel-heading a[aria-expanded="true"] {
+	background-color: #eee;
+}
+  
+.panel-default>.panel-heading a[aria-expanded="true"]:after {
+	content: "\2212";
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+  
+.panel-default>.panel-heading a[aria-expanded="false"]:after {
+	content: "\002b";
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.main-content {
+	width: 100%;
+}
+
+.description-title {
+	font-family: 'Sofia Pro';
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 55px;
+	transition: 0.3s;
+	margin-top: 20px;
+	margin-bottom: 2px;
+	color: #7B6BD9;
+	background-color: white;
+	border-radius: 10px;
+	padding: 5px 26px;
+}
+
+.description-title:hover, .description-title:focus {
+	animation: pulse 1s;
+	box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+
+.expand-collapse{
+	float: right;
+	margin-right: 8px;
+	font-size: 30px;
+}
+
+.description {
+	color: #B19CD9;
+	font-family: 'Sofia Pro';
+	font-weight: 400;
+	max-height: 0;
+	overflow: hidden;
+	margin-left: 0px;
+	padding: 0px 26px;
+	margin-top: -7px;
+	margin-bottom: 20px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-size: 16px;
+	margin-bottom: 10px;
+	background-color: white;
+	transition: max-height 0.2s ease-out;
+}
+
+.column {
+	float: left;
+	width: 50%;
+}
+  
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+h4 {
+	font-family: 'Sofia Pro';
+}
+
+.footer {
+	font-family: 'Sofia Pro';
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 22rem;
+    background-color: #D7EDFE; 
+    color: #614FD2;
+    text-align: center;
+  }
+
+  .footer-list {
+    list-style-type: none;
+   }
+
+   a.footer-list-text {
+    color: #A3826C;  
+    text-decoration: underline;
+   }
+
+.footer-social-icon {
+       padding-right: .5rem;
+       color: white;
+       width: 5em; 
+       height: 5em;
+}
+
+.footer-text {
+    padding-top: 4rem;
+}
+
+.footer-emails {
+	font-family: 'Sofia Pro';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	color: #7B6BD9;
+	text-align: left;
+	text-decoration: none;
+
+}
+
+.footer-desc {
+	font-family: 'Sofia Pro';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #7B6BD9;
+	text-align: left;
+	margin-top: 10px;
+}
+
+.icons {
+	text-decoration: none;
+}
+
+.icons:hover {
+	text-decoration: none;
+}
+
+.icon-img {
+	transition: 0.2s;
+}
+
+.icon-img:hover {
+	transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+	.quick-link {
+		margin-left: 0px;
+	}
+	.first-col {
+		padding: 40px;
+	}
+	.navbar {
+		margin-top: -85px;
+	}
+	.laptop-job-board {
+		display: none;
+	}
+	.phone-job-board {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.quick-link {
+		margin-left: 40px;
+	}
+	.first-col {
+		padding: 20px;
+	}	
+	.navbar {
+		margin-top: -40px;
+	}
+	.laptop-job-board {
+		display: block;
+	}
+	.phone-job-board {
+		display: none;
+	}
+}
+
+.quick-link:hover {
+	text-decoration: none;
+	color: #614FD2;
+}
+
+
+.cards {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+  }
+
+  
+  html {
+	box-sizing: border-box;
+  }
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
+  
+  img {
+	max-width: 100%;
+  }
+  
+  .cards {
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 15px;
+  }
+  
+  .card {
+	background-color: #fff;
+	border: none;
+	border-radius: 8px;
+	transition: 0.2s;
+  }
+
+  .card:hover {
+	box-shadow: 0px 5px 25px 0px pink;  
+  }
+  
+  .card header {
+	padding: 10px;
+	background-color: transparent;
+	color: #fff;
+	margin-top: 10px;
+  }
+  
+  .card header h2 {
+	font-size: 1.4rem;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+  }
+  iframe {
+	  padding: 20px;
+  }
