@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
 }
+
 html{
   scroll-behavior: smooth;
 }
@@ -14,10 +15,10 @@ h1, h2, h3, h4, h5, h6, p, span {
     font-weight: 500;
 }
 
-@import url(//db.onlinewebfonts.com/c/9e00143409affcb46a1ae58634aa64be?family=Sofia+Pro);
-
-@font-face {font-family: "Sofia Pro"; src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot"); src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff") format("woff"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.svg#Sofia Pro") format("svg"); }
-
+@font-face {
+  font-family: "Sofia Pro"; 
+  src: url("SofiaProRegular.ttf");
+}
 
 #nav-mobile {
 display: none;

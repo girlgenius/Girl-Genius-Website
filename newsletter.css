@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Sofia Pro"; 
+  src: url("SofiaProRegular.ttf");
+}
+
+@font-face {
+  font-family: "Sofia Pro SemiBold"; 
+  src: url("SofiaProSemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Sofia Pro Medium"; 
+  src: url("SofiaProMedium.ttf");
+}
+
 #wrapper {
 	background: #ECF1FE;
 	width: 350px;
@@ -125,6 +140,7 @@ a:hover {
 	border-radius: 100px;
 	font-size: 13px;
 	transition: 0.2s;
+	font-family: "Sofia Pro Medium"
 }
 
 #submit:hover {
@@ -227,14 +243,8 @@ a.nav-link {
 }
 
 
-@font-face {
-	font-family: "Sofia Pro"; 
-	src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot"); 
-	src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff") format("woff"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.svg#Sofia Pro") format("svg"); 
-}
-
 h1 {
-	font-family: 'Sofia Pro';
+	font-family: 'Sofia Pro SemiBold';
 	font-weight: bold;
 	font-size: 60px;
 	color: #614FD2;
