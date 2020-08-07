@@ -1,0 +1,397 @@
+#wrapper {
+	background: #ECF1FE;
+	width: 350px;
+	height: 300px;
+	position: absolute;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-family: 'Sofia Pro', sans-serif;
+	box-shadow: 5px 5px 10px #C3DDF8, -4px -4px 6px #fff;
+}
+
+form, p {
+	float: left;
+	text-align: center;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+form {
+	width: 355px;
+	margin: 0 auto;
+	position: relative;
+}
+
+form div {
+	float: center;
+	margin-bottom: 10px;
+	margin-left: -45px;
+}
+
+form div input {
+	width: 220px;
+	height: 36px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #e2e2e2;
+	font-size: 15px;
+	padding: 0 5px;
+
+	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+ 	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+ 	-ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+ 	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
+	transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+form div input:focus{
+	border-color: #aec6d6;
+  	outline: 0;
+  	outline: thin dotted \9;
+
+  	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(11,193,244,.6);
+ 	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(11,193,244,.6);
+ 	box-shadow: 0px 0px 0px 3px rgba(202,229,247,1);
+  
+ 	-webkit-border-radius: 3px;
+ 	-moz-border-radius: 3px;
+ 	border-radius: 3px;
+  
+ 	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+ 	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+ 	-ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+ 	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
+ 	transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+.uneditable {
+	-webkit-appearance: none; 
+	-moz-appearance: none; 
+	border: 1px solid #e2e2e2; 
+	height: 25px; 
+	background: #f7f7f7; 
+	padding: 0 5px;
+}
+
+form div input:focus {
+	outline: none;
+}
+
+#wrapper img {
+	width: 36px;
+	margin-right: 10px;
+}
+
+#brand h1 {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+h2 {
+	font-weight: normal;
+	text-align: center;
+	padding: 20px;
+	font-family: 'Sofia Pro', sans-serif;
+	color: #7B6BD9;
+	font-size: 22px;
+	margin-bottom: -5px;
+	line-height: 18px;
+}
+
+a {
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#break {
+	margin-bottom: 10px;
+}
+
+#submit{
+	clear: both;
+	float: center;
+	text-align: center;
+	background: #7B6BD9;
+	padding: 12px 24px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-left: -45px;
+	color: #fff;
+	border-radius: 100px;
+	font-size: 13px;
+	transition: 0.2s;
+}
+
+#submit:hover {
+  	color: #7B6BD9;
+	text-decoration: none;
+	background-color: #fff;
+}
+
+#hp {
+	display:none;
+}
+
+#gdpr {
+	float: left;
+	color:#323232;
+	width: 280px;
+	padding: 10px 10px 10px 35px;
+	text-align: left !important;
+}
+
+#gdpr input {
+	margin: 0px 0 0 -22px;
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
+/*
+#error-msg{
+	display: none;
+	width: 270px;
+	margin-left: 17px;
+	padding: 10px 15px;
+	background-color: #f2dede;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #333333;
+}
+*/
+
+/* Responsive */
+
+@media screen and (max-width: 450px) {
+	form div input{
+		width: 160px;
+	}
+}
+
+
+@viewport {
+	width: device-width ;
+	zoom: 1.0 ;
+  }
+
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+	transition: all 0.6s ease-out;
+	font-family: 'Sofia Pro';
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.navbar.scrolled {
+    background: #8d7fe8; 
+}
+
+.navbar {
+    height: 5rem;
+    color: #8d7fe8 !important;
+	width: 100%;
+}
+
+a.navbar-brand {
+	color: #8d7fe8 !important;
+	font-family: 'Sofia Pro';
+}
+
+.navbar-nav{
+  position: relative;
+}
+
+navbar-nav{
+  	white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+nav-link{
+  	position: relative;
+  	display:inline-block;
+}
+
+a.nav-link {
+  	display:inline-block;
+	color: #8d7fe8 !important;
+}
+
+
+@font-face {
+	font-family: "Sofia Pro"; 
+	src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot"); 
+	src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff") format("woff"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.svg#Sofia Pro") format("svg"); 
+}
+
+h1 {
+	font-family: 'Sofia Pro';
+	font-weight: bold;
+	font-size: 60px;
+	color: #614FD2;
+	text-align: left;
+	line-height: 60px;
+	margin-top: -70px;
+	text-shadow: 3px 3px 3px #abcff2, -3px -3px 3px #f9fcff;
+}
+
+body {
+	background-image: url(newsletter-bg.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-color: #D6EDFE;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+p {
+	font-family: 'Sofia Pro';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 20px;
+	color: #614FD2;
+	text-align: left;
+}
+
+.container {
+	margin-top: 100px;
+}
+
+.row {
+	margin-top: 200px;
+	text-align: center;
+	justify-content: center;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.column {
+	float: left;
+	width: 50%;
+}
+  
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+h4 {
+	font-family: 'Sofia Pro';
+}
+
+.footer {
+	font-family: 'Sofia Pro';
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 22rem;
+    background-color: #D7EDFE; 
+    color: #614FD2;
+    text-align: center;
+  }
+
+  .footer-list {
+    list-style-type: none;
+   }
+
+   a.footer-list-text {
+    color: #A3826C;  
+    text-decoration: underline;
+   }
+
+.footer-social-icon {
+       padding-right: .5rem;
+       color: white;
+       width: 5em; 
+       height: 5em;
+}
+
+.footer-text {
+    padding-top: 4rem;
+}
+
+.footer-emails {
+	font-family: 'Sofia Pro';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	color: #7B6BD9;
+	text-align: left;
+	text-decoration: none;
+
+}
+
+.footer-desc {
+	font-family: 'Sofia Pro';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #7B6BD9;
+	text-align: left;
+	margin-top: 10px;
+}
+
+.icons {
+	text-decoration: none;
+}
+
+.icons:hover {
+	text-decoration: none;
+}
+
+.icon-img {
+	transition: 0.2s;
+}
+
+.icon-img:hover {
+	transform: scale(1.1);
+}
+
+@media screen and (max-width: 999px) {
+	.first-col {
+		padding: 40px;
+		text-align: center;
+		margin-left: 20px;
+		margin-top: -50px;
+	}
+	.navbar {
+		margin-top: -85px;
+	}
+	.top-image {
+		width: 50%;
+		margin-top: 250px;
+		margin-bottom: -100px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.first-col {
+		padding: 20px;
+	}	
+	.navbar {
+		margin-top: -40px;
+	}
+	.top-image {
+		width: 75%;
+	}
+}
+
