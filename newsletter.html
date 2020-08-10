@@ -1,9 +1,6 @@
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.8, minimum-scale=0.8">
 
 <head>
-	<meta charset="utf-8" />
-	<meta name="description" content="" />
-	<meta name="author" content="" />
 	<link href="//db.onlinewebfonts.com/c/9e00143409affcb46a1ae58634aa64be?family=Sofia+Pro" rel="stylesheet" type="text/css"/>
 	<title>Girl Genius</title>
 
@@ -27,6 +24,11 @@
 		<script type="text/javascript" src="https://postal.hackclub.com/js/jquery-migrate-1.1.0.min.js"></script>
 		<script type="text/javascript" src="https://postal.hackclub.com/js/pickaday/pikaday.js"></script>
 		<script type="text/javascript" src="https://postal.hackclub.com/js/pickaday/pikaday.jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#name").focus();
+			});
+		</script>
 </head>
 
 <html>
@@ -50,6 +52,7 @@
 	-->
 	</nav>
 	<body>
+		<div class="separator"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-5 gauche first-col" align="left">
@@ -94,7 +97,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-lg-5 corps">
+				<div class="col-lg-5 corps" style="z-index: -1">
 					<br><br>
 					<img class="top-image" src="mailbox.png">	
 				</div>

@@ -590,9 +590,15 @@ button:hover{
 
 .counter-small {
     left: -5%;
-     font-size: 800%;
+     font-size: 600%;
      padding: 0% 10%;
      margin: 0% 10%;
+}
+.counter-small-k {
+      left: -5%;
+     font-size: 600%;
+     padding: 0% 10%;
+margin-left: -30%;
 }
 .counter-large {
     left: -8%;
@@ -603,10 +609,18 @@ button:hover{
 .top-num{
   padding-bottom: 50px;
 }
+
+.impact-item {
+    font-size: 120%;
+}
 @media only screen and (max-width: 1000px){
    .counter {
      font-size: 200%;
      margin: 0%;
+  }
+  .counter-k {
+    font-size: 200%;
+    margin: -25%;
   }
 }
 

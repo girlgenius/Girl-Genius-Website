@@ -38,7 +38,7 @@ form {
 	position: relative;
 }
 
-form div {
+form div { 
 	float: center;
 	margin-bottom: 10px;
 	margin-left: -45px;
@@ -183,13 +183,6 @@ a:hover {
 */
 
 /* Responsive */
-
-@media screen and (max-width: 450px) {
-	form div input{
-		width: 160px;
-	}
-}
-
 
 @viewport {
 	width: device-width ;
@@ -379,9 +372,6 @@ h4 {
 @media screen and (max-width: 999px) {
 	.first-col {
 		padding: 40px;
-		text-align: center;
-		margin-left: 20px;
-		margin-top: -50px;
 	}
 	.navbar {
 		margin-top: -85px;
