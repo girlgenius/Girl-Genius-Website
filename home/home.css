@@ -1,3 +1,114 @@
-html {
- background-image: url("Background.png");
+/* FONTS */
+
+@font-face {
+  font-family: "Sofia Pro Bold";
+  src: url("../SofiaProBold.ttf");
+}
+
+@font-face {
+  font-family: "Sofia Pro SemiBold";
+  src: url("../SofiaProSemiBold.ttf");
+}
+
+/* BODY */
+
+body {
+	background-image: url(Background.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-color: #EFE7FF;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* INITIAL PAGE */
+
+#title {
+  font-family: 'Sofia Pro SemiBold';
+  font-size: 65px;
+  color: #8E57F0;
+  text-align: center;
+  margin-top: 150px;
+}
+
+#subtitle {
+  font-family: 'Sofia Pro SemiBold';
+  font-size: 35px;
+  color: #A375F3;
+  text-align: center;
+  margin-top: -30px;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  z-index: 100;
+}
+
+ul {
+  float: right;
+  margin-right: 20px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  text-align: right;
+  font-size: 16px;
+  font-family: 'Sofia Pro';
+  color: #BF9FF8;
+  line-height: 75px;
+  padding: 0 20px;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  color: #8E57F0;
+}
+
+/* OUR PHILOSOPHY */
+
+.our-philosophy {
+  margin-top: 500px; /*for now*/
+  margin-left: auto;
+  margin-right: auto
+  text-align: center;
+  width: 80%;
+}
+
+.left {
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+}
+
+.right {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  margin-top: -10px;
+}
+
+h3 {
+  font-family: 'Sofia Pro SemiBold';
+  font-size: 35px;
+  line-height: 45px;
+  color: #8E57F0;
+  text-align: left;
+}
+
+p {
+  font-family: 'Sofia Pro Regular';
+  font-size: 20px;
+  color: #4B5161;
+  line-height: 30px;
 }
