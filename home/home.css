@@ -18,20 +18,20 @@
 }
 
 html {
- background-image: url("Background.png");
+ /*background-image: url("Background.png");*/
  margin: 0;
  padding: 0;
 }
 
 /* BODY */
-
+/*
 body {
 	background-image: url(Background.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-color: #EFE7FF;
 	-webkit-font-smoothing: subpixel-antialiased;
-}
+}*/
 
 /* INITIAL PAGE */
 
@@ -76,7 +76,7 @@ ul li a {
   text-decoration: none;
   text-align: right;
   font-size: 16px;
-  font-family: 'Sofia Pro';
+  font-family: 'Sofia Medium';
   color: #BF9FF8;
   line-height: 75px;
   padding: 0 20px;
@@ -87,13 +87,23 @@ ul li a:hover {
   color: #8E57F0;
 }
 
+/* LANDING */
+.initial{
+	background-image: url(landing-bkg.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 100%;
+	padding: 20px;
+	position: relative;
+	top: 0px;
+}
 /* OUR PHILOSOPHY */
 
 .our-philosophy {
-  margin-top: 500px; /*for now*/
   margin-left: auto;
   margin-right: auto
   text-align: center;
+  margin-bottom: 100px;
   width: 80%;
 }
 
@@ -111,7 +121,7 @@ ul li a:hover {
 }
 
 h3 {
-  font-family: 'Sofia Pro SemiBold';
+  font-family: 'Sofia SemiBold';
   font-size: 35px;
   line-height: 45px;
   color: #8E57F0;
@@ -119,7 +129,7 @@ h3 {
 }
 
 p {
-  font-family: 'Sofia Pro Regular';
+  font-family: 'Sofia Medium';
   font-size: 20px;
   color: #4B5161;
   line-height: 30px;
@@ -164,6 +174,7 @@ p {
 }
 
 #opportunities h2{
+	font-family: "Sofia SemiBold";
 	margin: 10% 0% 0% 0%;
 	text-align: center;
 	color: white;
@@ -177,7 +188,7 @@ p {
 	margin: 10px 0px 80px 10px;
 	text-align: center;
 	color: white;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	text-shadow: 0px 4px 4px rgba(0,0,0,.25);
 }
 
@@ -192,8 +203,46 @@ p {
 	color: #A375F3;
 	font-size: 1.1rem;
 }
+
+#magazines{
+	padding: 5px 135px 200px 135px;
+}
+#magazines h2{
+	font-size: 3.3rem;
+	font-family: "Sofia Medium";
+	margin: 10% 0% 0% 0%;
+	text-align: center;
+	color: #8E57F0;
+}
+#magazines h3{
+	font-family: "Sofia Medium";
+	font-size: 2rem;
+	text-align: center;
+	color: #A579F3;
+}
+.magazine-container{
+	text-align:center;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr)
+}
+.magazine-container img{
+	width: 100%;
+	max-width: 220px;
+	margin: 0;
+	padding: 0;
+}
+.magazine-container p{
+	color: #FFC0E3;
+	font-size: 1.3rem;
+	font-family: "Sofia SemiBold";
+	margin: 38px 0px 0px 0px;
+}
+
 @media only screen and (max-width: 900px) {
   .grid-container{
+    	grid-template-columns: 1fr;
+  }
+  .magazine-container{
     	grid-template-columns: 1fr;
   }
 }
