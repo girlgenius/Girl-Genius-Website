@@ -246,3 +246,49 @@ p {
     	grid-template-columns: 1fr;
   }
 }
+
+footer{
+	width: 100%;
+	background-image: url(footer.png);
+	background-size:cover;
+	position: absolute;
+	background-repeat: no-repeat;
+}
+footer .side-by-side{
+	display: flex;
+	flex-direction: row;
+}
+footer .text{
+	display: flexbox;
+	width: 30%;
+	color: white;
+	margin-left: 100px;
+
+}
+footer h2{
+	margin-left: 100px;
+	padding-top: 12%;
+	top: 50px;
+	color: white;
+	font-size: 2.5rem;
+	font-family: "Sofia SemiBold";
+}
+footer p{
+	color: white;
+	font-size: 1.1rem;
+	line-height: 1.6;
+}
+footer #links{
+	margin-left: 150px;
+	display: grid;
+	font-size: 1.2rem;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 80px;
+	grid-row-gap: 10px;
+}
+footer #links a{
+	font-family: "Sofia Medium";
+	text-decoration: none;
+	color: white;
+}
+
