@@ -40,7 +40,7 @@ body {
   font-size: 65px;
   color: #8E57F0;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 130px;
 }
 
 #subtitle {
@@ -48,6 +48,7 @@ body {
   font-size: 35px;
   color: #A375F3;
   text-align: center;
+  margin-top: 15px;
 }
 
 /* NAVIGATION BAR */
@@ -265,6 +266,53 @@ p {
   }
   .magazine-container{
     	grid-template-columns: 1fr;
+  }
+}
+
+#services {
+  padding: 200px 0px 0px 0px;
+  background-image: url("ourservices-background.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+#services h2 {
+  font-size: 3.3rem;
+  font-family: "Sofia SemiBold";
+  margin-left: 15%;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #fff;
+}
+
+#services p {
+  font-family: "Sofia SemiBold";
+  font-size: 1.5rem;
+  text-align: left;
+  margin-left: 15%;
+  margin-bottom: 50px;
+  color: #fff;
+  opacity: 70%;
+}
+
+#services img {
+  width: 70%;
+}
+
+#timeline {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  #services p {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #services p {
+    width: 30%;
   }
 }
 
