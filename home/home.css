@@ -137,9 +137,28 @@ p {
 
 
 /*OPPORTUNITIES*/
+.curly-images::before{
+	position: relative;
+	top: 70px;
+	content: url("opportunities-frontcover.png") ;
+	margin: 0px;
+	padding: 0px;
+}
+.curly-images::after{
+	position: relative;
+
+	content: url("opportunities-backcover.png") ;
+	margin: 0px;
+	padding: 0px;
+}
+
 #opportunities {
-	padding: 135px 135px 73px 135px;
-	background-image: url("opportunities-background.png");
+	padding: 50px 135px 50px 135px;
+	background-image: url("opportunities-bkg.png");
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 	background-repeat: no-repeat;
 	background-size:cover;
 	font-family: "Sofia Medium";
@@ -161,10 +180,12 @@ p {
 	box-shadow: inset 0 0 10px #FFFFFF;
 	background-color: rgba(255, 255, 255, .97);
 	padding: 35px 30px;
-	box-shadow: 0 0 11px rgba(255, 192, 227, 1); 
-	transition: background-color .2s;
+	box-shadow: 0 0 11px rgba(255, 192, 227, .3); 
+	transition: box-shadow .2s;
 }
-
+.grid-container div:hover{
+	box-shadow: 0 0 11px rgba(255, 192, 227, 1); 
+}
 .grid-container a{
 	text-decoration: none;
 	background-color: #3EA6FF;
@@ -290,5 +311,8 @@ footer #links a{
 	font-family: "Sofia Medium";
 	text-decoration: none;
 	color: white;
+	transition: text-decoration .3s;
 }
-
+footer #links a:hover{
+	text-decoration: underline;
+}
