@@ -12,15 +12,75 @@
   src: url(../SofiaProSemiBold.ttf);
 }
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
 
 html {
- /*background-image: url("Background.png");*/
  margin: 0;
  padding: 0;
+}
+
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+::selection {
+  background: #ffdde0;
+}
+
+::-moz-selection {
+  background: #ffdde0;
+}
+
+/* SOCIAL MEDIA BAR */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(0%);
+  right: 0;
+  z-index: 9999!important;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.4s ease;
+  color: white;
+  font-size: 20px;
+  background-color: #f7a8ae;
+}
+
+.icon-bar a:hover {
+  color: #ed6873;
+}
+
+.instagram {
+  color: white;
+  border-radius: 15px 0px 0px 0px;
+}
+
+.tiktok {
+  color: white;
+}
+
+.google {
+  color: white;
+}
+
+.linkedin {
+  color: white;
+}
+
+.youtube {
+  color: white;
+  border-radius: 0px 0px 0px 15px;
 }
 
 /* BODY */
@@ -98,6 +158,7 @@ ul li a:hover {
 	position: relative;
 	top: 0px;
 }
+
 /* OUR PHILOSOPHY */
 
 .our-philosophy {
@@ -106,6 +167,15 @@ ul li a:hover {
   text-align: center;
   width: 80%;
   margin-bottom: -70px;
+  z-index: 1;
+}
+
+.our-philosophy img {
+  transition: 0.3s;
+}
+
+.our-philosophy img:hover {
+  transform: rotate(0.015turn);
 }
 
 mark {
@@ -192,6 +262,12 @@ p {
 	padding: 10px 20px;
 	border-radius: 20px;
 	color: white;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.grid-container a:hover {
+  background-color: #F18B95;
 }
 
 #opportunities h2 {
@@ -218,6 +294,7 @@ p {
 	color: #8E57F0;
 	font-size: 1.7rem;
 }
+
 #opportunities p {
 	margin: 10px 0px 20px 0px;
 	line-height: 1.5;
@@ -244,18 +321,26 @@ p {
   line-height: 2rem;
 	color: #A579F3;
 }
+
 .magazine-container {
   padding: 5px 135px 100px 135px;
 	text-align:center;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr)
 }
+
 .magazine-container img {
 	width: 100%;
 	max-width: 220px;
 	margin: 0;
 	padding: 0;
+  transition: 0.2s;
 }
+
+.magazine-container img:hover {
+  transform: scale(1.05);
+}
+
 .magazine-container p {
 	color: #FFC0E3;
 	font-size: 1.3rem;
@@ -301,6 +386,11 @@ p {
 
 #services img {
   width: 70%;
+  transition: 0.2s
+}
+
+#services img:hover {
+  transform: scale(1.03);
 }
 
 #timeline {
