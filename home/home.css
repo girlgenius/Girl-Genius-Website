@@ -95,6 +95,10 @@ body {
 
 /* INITIAL PAGE */
 
+.initial {
+  text-align: center;
+}
+
 #title {
   font-family: 'Sofia SemiBold';
   font-size: 65px;
@@ -109,6 +113,27 @@ body {
   color: #A375F3;
   text-align: center;
   margin-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  #initial-artwork {
+    margin-top: 20px;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 600px){
+  #initial-artwork {
+    margin-top: 20px;
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #initial-artwork {
+    margin-top: 20px;
+    width: 27%;
+  }
 }
 
 /* NAVIGATION BAR */
@@ -404,7 +429,7 @@ p {
   margin-bottom: 250px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   #services p {
     width: 70%;
   }
