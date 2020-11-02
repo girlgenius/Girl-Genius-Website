@@ -455,10 +455,6 @@ p {
   margin-bottom: 60px;
 }
 
-#services #instagram, #events {
-  margin-top: 20px;
-}
-
 #services #button {
   font-family: "Sofia SemiBold";
   text-decoration: none;
@@ -514,7 +510,7 @@ p {
 #takeovers {
   text-align: center;
   margin-top: -45px;
-  margin-bottom: 250px;
+  margin-bottom: -120px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -631,7 +627,7 @@ footer #links a:hover{
 blockquote{
   font-family: Sofia Medium;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-left: 15%;
   width: 60%;
 }
@@ -642,7 +638,7 @@ blockquote{
    height: auto;
    margin-top: 80px;
 }
-.testimonial-slider p{
+#services .testimonial-slider p{
   margin-top: 5px;
   font-size: 1.2rem;
 }
@@ -653,7 +649,7 @@ blockquote{
    position: relative;
    display: inline-block;
    width: 100%;
-   height: 350px;
+   height: 170px;
    overflow: hidden;
    margin: 0 auto;
 }
