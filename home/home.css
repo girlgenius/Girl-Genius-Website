@@ -389,9 +389,10 @@ p {
   background-size:cover;
 }
 
-#split{
-  display: flex;
-  align-items: flex-end;
+hr.rounded {
+  border-top: 8px solid #AC83F4;
+  border-radius: 5px;
+  margin: 0% 15%;
 }
 
 #services h2 {
@@ -444,8 +445,8 @@ p {
   margin-bottom: 60px;
 }
 
-#services #instagram {
-  margin-top: 60px;
+#services #instagram, #events {
+  margin-top: 20px;
 }
 
 #services #button {
