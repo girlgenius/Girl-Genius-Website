@@ -249,7 +249,7 @@ p {
 	padding: 50px 135px 50px 135px;
 	background-image: url("opportunities-bkg.png");
 	background-attachment: fixed;
-  	background-position: center;
+  background-position: center;
  	background-repeat: no-repeat;
  	background-size: cover;
 	background-repeat: no-repeat;
@@ -383,17 +383,20 @@ p {
 }
 
 #services {
-  padding: 250px 0px 0px 0px;
-  top: 70px;
+  padding: 250px 0px 10px 0px;
   background-image: url("ourservices-background.png");
   background-repeat: no-repeat;
   background-size:cover;
 }
 
+#split{
+  display: flex;
+  align-items: flex-end;
+}
+
 #services h2 {
   font-size: 3.3rem;
   font-family: "Sofia SemiBold";
-  margin-left: 15%;
   text-align: left;
   color: #fff;
 }
@@ -402,7 +405,6 @@ p {
   font-size: 2.5rem;
   font-family: "Sofia SemiBold";
   margin-top: 2%;
-  margin-left: 15%;
   text-align: left;
   color: #fff;
   opacity: 95%;
@@ -412,7 +414,6 @@ p {
   font-family: "Sofia SemiBold";
   font-size: 1.5rem;
   text-align: left;
-  margin-left: 15%;
   opacity: 70%;
 }
 
@@ -426,6 +427,9 @@ p {
 
 }
 
+#heading{
+    display: inline-flex;
+}
 #services p a {
   color: #fcfdff;
   opacity: 100%;
@@ -448,13 +452,15 @@ p {
   font-family: "Sofia SemiBold";
   text-decoration: none;
   background-color: #e5f0ff;
-  padding: 10px 20px;
-  margin-left: 15%;
+  padding: 0px 20px;
+  vertical-align: text-top;
   border-radius: 20px;
   color: #A375F4;
   transition: 0.3s;
   font-size: 16px;
-  margin-top: 20px;
+  text-align: center;
+  margin: auto;
+  margin-left: 20px;
 }
 
 #services #button:hover {
@@ -470,11 +476,12 @@ p {
 #services img:hover {
   transform: scale(1.03);
 }
-
+#testimonial, #services p, #services h2, #services h3{
+  margin-left: 15%;
+}
 #testimonial {
   font-style: italic;
   font-size: 1.3rem;
-  margin-left: 15%;
   margin-right: 30%;
   margin-top: -20px;
   margin-bottom: 20px;
@@ -608,4 +615,126 @@ footer #links a{
 }
 footer #links a:hover{
 	text-decoration: underline;
+}
+
+blockquote{
+  font-family: Sofia Medium;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 15%;
+  width: 60%;
+}
+
+.testimonial-slider {
+   display: block;
+   width: 100%;
+   height: auto;
+   margin-top: 80px;
+}
+.testimonial-slider p{
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+.testimonial-slider ul.slider {
+   display: block;
+   list-style: none;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+   width: 100%;
+   height: 350px;
+   overflow: hidden;
+   margin: 0 auto;
+}
+
+.testimonial-slider ul.slider li {
+    position: absolute;
+    display: block;
+    width: 100%;
+    opacity: 0;
+    margin: 0 auto;
+}
+.testimonial-slider ul.slider li:nth-child(1) {
+    opacity: 1;
+
+    -webkit-animation: fade-animation-1 25s infinite;
+            animation: fade-animation-1 25s infinite;
+}
+.testimonial-slider ul.slider li:nth-child(2) {
+    -webkit-animation: fade-animation-2 25s infinite;
+            animation: fade-animation-2 25s infinite;
+}
+.testimonial-slider ul.slider li:nth-child(3) {
+    -webkit-animation: fade-animation-3 25s infinite;
+            animation: fade-animation-3 25s infinite;
+}
+.testimonial-slider ul.slider li:nth-child(4) {
+    -webkit-animation: fade-animation-4 25s infinite;
+            animation: fade-animation-4 25s infinite;
+}
+/* KEYFRAME DECLARATIONS */
+@keyframes fade-animation-1 {
+    0%, 25%, 100% {
+        opacity:0
+    }
+    3%, 22% {
+        opacity: 1;
+    }
+}
+@keyframes fade-animation-2 {
+    0%, 25%, 50%, 100% {
+        opacity:0
+    }
+    28%, 47% {
+        opacity: 1;
+    }
+}
+@keyframes fade-animation-3 {
+    0%, 50%, 75%, 100% {
+        opacity:0
+    }
+    53%, 72% {
+        opacity: 1;
+    }
+}
+@keyframes fade-animation-4 {
+    0%, 75%, 100% {
+        opacity:0
+    }
+    78%, 97% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-animation-1 {
+    0%, 25%, 100% {
+        opacity:0
+    }
+    3%, 22% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fade-animation-2 {
+    0%, 25%, 50%, 100% {
+        opacity:0
+    }
+    28%, 47% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fade-animation-3 {
+    0%, 50%, 75%, 100% {
+        opacity:0
+    }
+    53%, 72% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fade-animation-4 {
+    0%, 75%, 100% {
+        opacity:0
+    }
+    78%, 97% {
+        opacity: 1;
+    }
 }
