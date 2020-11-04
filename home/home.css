@@ -80,6 +80,10 @@ img {
 
 .youtube {
   color: white;
+}
+
+.slack {
+  color: white;
   border-radius: 0px 0px 0px 15px;
 }
 
@@ -481,10 +485,10 @@ p {
   text-align: center;
   margin: auto;
   margin-left: 20px;
-  position: relative; 
-  display: inline-block; 
-  top: -3px; 
-  background-color: #783DDE; 
+  position: relative;
+  display: inline-block;
+  top: -3px;
+  background-color: #783DDE;
   color: #E2F5FF
 }
 
