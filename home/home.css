@@ -124,6 +124,9 @@ body {
     margin-top: 20px;
     width: 50%;
   }
+  .initial-video {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 600px){
@@ -131,12 +134,18 @@ body {
     margin-top: 20px;
     width: 40%;
   }
+  .initial-video {
+    width: 70%;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
   #initial-artwork {
     margin-top: 20px;
     width: 27%;
+  }
+  .initial-video {
+    width: 30%;
   }
 }
 
