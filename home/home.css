@@ -51,7 +51,7 @@ img {
   display: block;
   text-align: center;
   padding: 16px;
-  transition: all 0.4s ease;
+  : all 0transition.4s ease;
   color: white;
   font-size: 20px;
   background-color: #f7a8ae;
@@ -189,7 +189,7 @@ ul li a:hover {
 /* LANDING */
 .initial{
 	background-image: url(landing-bkg.png);
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100%;
 	padding: 20px;
@@ -658,9 +658,55 @@ footer #links a{
 	color: white;
 	transition: text-decoration .3s;
 }
-footer #links a:hover{
-	text-decoration: underline;
+.madeby{
+    font-size: 1rem;
+  }
+@media only screen and (max-width: 1000px) {
+  footer .text{
+    margin-left: 70px;
+  }
+  footer h2{
+    margin-left: 70px;
+    font-size: 2.2rem;
+  }
+  footer p{
+    font-size: 1.1rem;
+  }
+  footer #links a{
+    font-size: 1.1rem;
+  }
+  footer #links{
+    margin-left: 100px;
+  }
+  .madeby{
+    font-size: .9rem;
+  }
 }
+@media only screen and (max-width: 800px) {
+  footer .text{
+    margin-left: 60px;
+  }
+  footer h2{
+    padding-top: 15%;
+    margin-left: 60px;
+    font-size: 2rem;
+  }
+  footer p{
+    font-size: 1rem;
+  }
+  footer #links a{
+    font-size: 1rem;
+  }
+  footer #links{
+    margin-left: 100px;
+    grid-column-gap: 50px;
+    grid-row-gap: 5px;
+  }
+  .madeby{
+    font-size: .8rem;
+  }
+}
+
 
 blockquote{
   font-family: Sofia Medium;
@@ -788,3 +834,53 @@ blockquote{
         opacity: 1;
     }
 }
+#get-involved{
+  margin: auto;
+  padding: 0% 10% 10% 15%;
+  background-color: #EFE7FF;
+}
+#get-involved #grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media only screen and (max-width: 800px) {
+  #get-involved #grid{
+    grid-template-columns: 1fr;
+  }
+}
+#get-involved #subtitle{
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+#get-involved img{
+  height: 110px;
+}
+#get-involved h2{
+  padding-top: 10%;
+  font-size: 3.3rem;
+  font-family: "Sofia SemiBold";
+  color: #8E57F0;
+}
+#get-involved div{
+  transition: .2s;
+}
+#get-involved a{
+  text-decoration: none
+}
+#get-involved #grid div:hover{
+  transform: scale(1.05);
+}
+#get-involved h3{
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #9186D4;
+}
+#get-involved #grid p{
+  font-size: 1rem;
+  width: 70%;
+  line-height: 1.7;
+  color: #2E2D30;
+}
+
+
