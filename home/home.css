@@ -768,6 +768,7 @@ blockquote{
     -webkit-animation: fade-animation-4 25s infinite;
             animation: fade-animation-4 25s infinite;
 }
+
 /* KEYFRAME DECLARATIONS */
 @keyframes fade-animation-1 {
     0%, 25%, 100% {
@@ -810,6 +811,7 @@ blockquote{
         opacity: 1;
     }
 }
+
 @-webkit-keyframes fade-animation-2 {
     0%, 25%, 50%, 100% {
         opacity:0
@@ -818,6 +820,7 @@ blockquote{
         opacity: 1;
     }
 }
+
 @-webkit-keyframes fade-animation-3 {
     0%, 50%, 75%, 100% {
         opacity:0
@@ -826,6 +829,7 @@ blockquote{
         opacity: 1;
     }
 }
+
 @-webkit-keyframes fade-animation-4 {
     0%, 75%, 100% {
         opacity:0
@@ -834,53 +838,78 @@ blockquote{
         opacity: 1;
     }
 }
-#get-involved{
+
+/* GET INVOLVED */
+
+#get-involved {
   margin: auto;
   padding: 0% 10% 10% 15%;
   background-color: #EFE7FF;
 }
-#get-involved #grid{
+
+#get-involved #grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 @media only screen and (max-width: 800px) {
   #get-involved #grid{
     grid-template-columns: 1fr;
   }
 }
-#get-involved #subtitle{
+
+#get-involved #subtitle {
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 50px;
 }
-#get-involved img{
+
+#get-involved img {
   height: 110px;
 }
-#get-involved h2{
+
+#get-involved h2 {
   padding-top: 10%;
   font-size: 3.3rem;
   font-family: "Sofia SemiBold";
   color: #8E57F0;
 }
-#get-involved div{
+
+#get-involved div {
   transition: .2s;
 }
-#get-involved a{
+
+#get-involved a {
   text-decoration: none
 }
-#get-involved #grid div:hover{
+
+#get-involved #grid div:hover {
   transform: scale(1.05);
 }
-#get-involved h3{
+
+#get-involved h3 {
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 1.4rem;
+  margin-top: 15px;
   color: #9186D4;
 }
-#get-involved #grid p{
+
+#get-involved #grid p {
   font-size: 1rem;
   width: 70%;
-  line-height: 1.7;
+  line-height: 1.4rem;
   color: #2E2D30;
+  margin-top: 15px;
 }
 
+@media only screen and (max-width: 600px) {
+  #get-involved #grid p {
+    margin-bottom: 45px;
+  }
+}
 
+@media only screen and (min-width: 600px) {
+  #get-involved #grid p {
+    margin-bottom: 0px;
+  }
+}
