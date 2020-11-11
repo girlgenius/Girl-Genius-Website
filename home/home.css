@@ -921,3 +921,13 @@ blockquote{
     margin-bottom: 0px;
   }
 }
+
+[data-words]{
+  vertical-align: top;
+  position: static;
+}
+[data-words] > span{
+  position: absolute;
+  color: chocolate;
+}
+
