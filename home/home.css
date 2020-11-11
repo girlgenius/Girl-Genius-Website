@@ -226,7 +226,8 @@ h3 {
   font-family: 'Sofia SemiBold';
   font-size: 35px;
   line-height: 45px;
-  color: #8E57F0;
+  color: #dc746c;
+  opacity: 90%;
 }
 
 p {
@@ -350,7 +351,7 @@ p {
 	font-family: "Sofia Medium";
 	margin: 10% 0% 0% 0%;
 	text-align: center;
-	color: #8E57F0;
+	color: #dc746c;
 }
 #magazines h3 {
 	font-family: "Sofia Medium";
@@ -358,7 +359,8 @@ p {
 	text-align: center;
   margin-top: 10px;
   line-height: 2rem;
-	color: #A579F3;
+	color: #d66c69;
+  opacity: 60%;
 }
 
 .magazine-container {
@@ -844,7 +846,7 @@ blockquote{
 #get-involved {
   margin: auto;
   padding: 0% 10% 10% 15%;
-  background-color: #EFE7FF;
+  background-color: #f4f8fc;
 }
 
 #get-involved #grid {
@@ -863,6 +865,8 @@ blockquote{
   text-align: left;
   font-size: 1.6rem;
   margin-bottom: 50px;
+  color: #128aed;
+  opacity: 70%;
 }
 
 #get-involved img {
@@ -874,7 +878,7 @@ blockquote{
   padding-top: 10%;
   font-size: 3.3rem;
   font-family: "Sofia SemiBold";
-  color: #8E57F0;
+  color: #128aed;
 }
 
 #get-involved div {
@@ -893,8 +897,9 @@ blockquote{
   font-size: 1.6rem;
   line-height: 1.4rem;
   margin-top: 15px;
-  color: #9186D4;
   margin-left: -30%;
+  color: #128aed;
+  opacity: 70%;
 }
 
 #get-involved #grid p {
