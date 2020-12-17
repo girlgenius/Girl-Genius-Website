@@ -1,0 +1,62 @@
+<!--
+   contact.html
+   
+   Copyright 2020 Sanya Gupta <sanyagupta@Sanyas-MacBook-Pro.local>
+   
+-->
+
+<DOCTYPE !html>
+ <html>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.8, minimum-scale=0.8">
+
+	<head>
+	  <meta charset="utf-8">
+	  <title>Girl Genius</title>
+	  <link href="contact.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/c5504591f3.js" crossorigin="anonymous"></script>
+	</head>
+
+<body>
+    <nav>
+      <ul class="header">
+        <li><a href="/">HOME</a></li>
+        <li><a href="about">ABOUT</a></li>
+        <li><a href="youtube">YOUTUBE</a></li>
+        <li><a href="blog">BLOG</a></li>
+        <li><a href="projects">PROJECTS</a></li>
+      </ul>
+    </nav>
+    
+    
+    <section class = "contact-form">
+		<div class = "grid-container">
+			<div id = "popup">
+			<h3>Let's Talk!</h3>
+			<form action="action_page.php">
+			<label for="To:">To:</label>
+			<select id="To:" name="To:">
+			<option value="Founder:">Founder: <br>shivali@girlgeniusmag.tech</option>
+			<option value="Co-Lead">Co-Lead: <br>chloe@girlgeniusmag.tech</option>
+			<option value="Partnerships">Partnerships: <br>agnes@girlgeniusmag.tech</option>
+			</select>
+    
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" placeholder="Jane Doe">
+
+			<label for="lname">Email</label>
+			<input type="text" id="lname" name="lastname" placeholder="example@gmail.com">
+
+			<label for="message">Message</label>
+			<textarea id="message" name="message" placeholder="Type your message here..." style="height:200px"></textarea>
+
+			<input type="send" value="Send">
+
+		</form>
+		</div>
+	</div>
+    </section>
+
+</body>
+</html> 
