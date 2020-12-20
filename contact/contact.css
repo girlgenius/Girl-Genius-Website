@@ -1,0 +1,355 @@
+/*FONTS*/
+@font-face {
+  font-family: Sofia Bold;
+  src: url(../SofiaProBold.ttf);
+}
+@font-face {
+  font-family: Sofia Medium;
+  src: url(../SofiaProMedium.ttf);
+}
+@font-face {
+  font-family: Sofia SemiBold;
+  src: url(../SofiaProSemiBold.ttf);
+}
+
+.custom-select {
+  position: relative;
+} 
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #EFE7FF;
+  font-family: 'Sofia Bold';
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  /*border-color: #fff transparent transparent transparent;*/
+  border-color: #8A8CE3 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  /*border-color: transparent transparent #8A8CE3 transparent;*/
+  border-color: transparent transparent #8A8CE3 transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+	border-radius: 16px 16px 0px 0px;
+  color: rgba(97, 79, 210, 0.7);
+  font-family: 'Sofia Bold';
+  /*padding: 8px 16px;*/
+  padding: 14px;
+  border: 1px solid transparent;
+  /*border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;*/
+  border-color: transparent transparent rgba(0, 0, 0, 0) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #EFE7FF;
+  border-radius: 0px 0px 14px 14px;
+  /*padding: 14px;*/
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+input[type=text], select, textarea::before{
+	/*content: "\A";
+	white-space: pre;*/
+}
+
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	font-family: 'Sofia Bold';
+  width: 100%; 
+  /*padding: 12px;  Some padding */ 
+  padding: 14px;
+  color: rgba(97, 79, 210, 0.7);
+  border: 1px solid #EFE7FF; 
+  background-color : #EFE7FF;
+  border-radius: 16px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+::placeholder { 
+  color: rgba(97, 79, 210, 0.7);
+}
+
+input[type=button] {
+	font-family: 'Sofia SemiBold';
+	background-color: #C0A3F9;
+	color: white;
+	padding: 12px 20px; 
+	border: none; 
+	border-radius:24px;
+	radius: 12px; /*used to be 4 px*/
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+}
+
+#message{
+	width: 100%;
+}
+
+input[type=button]:hover {
+	background-color: #8E57F0;
+}
+
+/* Add a background color and some padding around the form 
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+} */
+
+.grid-container{
+	/*margin: 50px 3% 10% 0%; 0px 3% 10% 0% */
+	margin: 100px 200px 70px 200px; /* 0px 3% 10% 0% */
+	display: grid;
+	grid-template-columns: 1fr; /* used to be 1fr 1fr 1fr*/
+	/*background-image: url(Background.png);*/
+	/* grid-gap: 20px 50px; */
+}
+
+.grid-container img{
+	height: 300px;
+} 
+
+.grid-container #popup { 
+	border-radius: 50px; /* rounded corners */
+	/*box-shadow: 0 0 11px rgba(255, 192, 227, 1); */
+	background-color: rgba(255, 255, 255, 1);
+	padding: 35px 30px;
+	/*box-shadow: 0 0 11px rgba(255, 192, 227, .3);*/
+	box-shadow: 5px 10px 18px rgba(0,0,0,.2);
+	/*transition: box-shadow .2s;*/
+} 
+
+#popup h3 {
+	font-family: 'Sofia SemiBold';
+	letter-spacing: .5px;
+	/*margin: 20px 0px 80px 10px;*/
+	margin: 0px 0px 10px 0px;
+	text-align: left;
+	color: #614FD2;
+	/*font-size: 1.5rem;*/
+	font-size: 3rem;
+	line-height: 2rem;
+}
+
+#popup::before {
+  content: "\A";
+  white-space: pre;
+}
+
+.popup-top {
+	display: flex;
+}
+
+#popup label::before{
+	content: "\A";
+	white-space: pre;
+}
+
+#popup label::after{
+	/*content: "\A";
+	white-space: pre;*/
+}
+
+#popup label {
+	font-family: 'Sofia Bold';
+	color: #614FD2;
+	/*content: "\A"*/
+}
+
+/*#popup select {
+	display:none;
+} */
+
+#popup option{
+}
+
+.select-selected {
+	color: #614FD2;
+}
+
+html,body
+{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+body {
+	content: "";
+	background-image: url("Contact-Background.png");
+ 	background-size: 100% 100%;
+ 	display: inline-block;
+ 	height: 175%;
+ 	width:100%;
+ 	position:relative;
+ 	
+ 	border: 5px double white;
+	margin: 0em;
+	padding: 0em 0em 0 0em;
+	float: right;
+	/*line-height: 155%;*/
+ 	/*top: 70px; */
+}
+
+/* nav bar */
+nav {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  z-index: 100;
+}
+
+ul {
+  float: right;
+  margin-right: 20px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  text-align: right;
+  font-size: 16px;
+  font-family: 'Sofia Medium';
+  color: #ffffff;
+  line-height: 75px;
+  padding: 0 20px;
+  transition: 0.3s;
+}
+
+
+
+ul li a:hover {
+  color: #8E57F0;
+}
+
+footer{
+	width: 100%;
+	background-image: url(footer.png);
+	background-size:cover;
+	position: absolute;
+	background-repeat: no-repeat;
+}
+
+footer .side-by-side{
+	display: flex;
+	flex-direction: row;
+}
+footer .text{
+	display: flexbox;
+	width: 30%;
+	color: white;
+	margin-left: 100px;
+
+}
+footer h2{
+	margin-left: 100px;
+	padding-top: 12%;
+	top: 50px;
+	color: white;
+	font-size: 2.5rem;
+	font-family: "Sofia SemiBold";
+}
+footer p{
+	font-family: "Sofia SemiBold";
+	color: white;
+	font-size: 1.1rem;
+	line-height: 1.6;
+}
+footer #links{
+	margin-left: 150px;
+	display: grid;
+	font-size: 1.2rem;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 80px;
+	grid-row-gap: 10px;
+}
+footer #links a{
+	font-family: "Sofia Medium";
+	text-decoration: none;
+	color: white;
+	transition: text-decoration .3s;
+}
+
+@media only screen and (max-width: 1000px) {
+  footer .text{
+    margin-left: 70px;
+  }
+  footer h2{
+    margin-left: 70px;
+    font-size: 2.2rem;
+  }
+  footer p{
+    font-size: 1.1rem;
+  }
+  footer #links a{
+    font-size: 1.1rem;
+  }
+  footer #links{
+    margin-left: 100px;
+  }
+  .madeby{
+    font-size: .9rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  footer .text{
+    margin-left: 60px;
+  }
+  footer h2{
+    padding-top: 15%;
+    margin-left: 60px;
+    font-size: 2rem;
+  }
+  footer p{
+    font-size: 1rem;
+  }
+  footer #links a{
+    font-size: 1rem;
+  }
+  footer #links{
+    margin-left: 100px;
+    grid-column-gap: 50px;
+    grid-row-gap: 5px;
+  }
