@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.8, minimum-scale=0.8">
 
 <head>
@@ -32,120 +34,103 @@
 </head>
 
 <html>
-	<nav class="navbar navbar-expand-sm navbar-dark" id="mainNav">
-		<!--
-		<div class="container">
-		  <a class="navbar-brand" href="/index.html" style="color: #B19CD9;">GIRL GENIUS</a><button
-			class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-			aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-			class="navbar-toggler-icon"></span></button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto my-2 my-lg-0">
-				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/index.html">HOME</a></li>
-				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/about.html">ABOUT</a></li>
-				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/index.html">CONFERENCE</a></li>
-				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/events.html">EVENTS</a></li>
-				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/contacts.html">CONTACT</a></li>
-				</ul>
-			  </div>
+  <div style="background-image: url('newsletterbackground.jpg');">
+    <nav class="navbar navbar-expand-sm navbar-dark" id="mainNav">
+    
+      <nav>
+        <ul class="header">
+          <li><a href="/">HOME</a></li>
+          <li><a href="about">ABOUT</a></li>
+          <li><a href="youtube">YOUTUBE</a></li>
+          <li><a href="blog">BLOG</a></li>
+          <li><a href="projects">PROJECTS</a></li>
+        </ul>
+      </nav>
+      </div>
+
+    </nav>
+    <body> 
+      <div class="separator"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 gauche first-col" align="left">
+            
+            <br><br>
+            <div class="wrapper">
+              <h2 class= "formtitle">Subscribe to our Newsletter!<h2>
+                <h4 class="purple-subtitle">for STEAM internships / awards / scholarships / advice. </h4>
+                <h4 class="black-subtitle" >Join a community of over 4,300 females changemakers. We can’t wait to support your journey of personal growth in STEAM! </h4>
+              <p>
+                <form action="https://postal.hackclub.com/subscribe" method="POST" accept-charset="utf-8" id="subscribe-form">
+                  <div class="forminputs" >
+                    <label class="fieldtitles" for="name">Name</label><br>
+                    <!--<br></br>-->
+                      <input class="fields" type="text" id="name" name="name" placeholder="Jane Doe">
+                      <br><br>
+                      <label class="fieldtitles"  for="email">Email</label>	<br>
+                      <input class="fields" type="text" id="email" name="email" placeholder="example@gmail.com">
+                  </div>
+                  
+                  <div class="formbutton">
+                    <div id="hp" >
+                      <label  for="hp">HP</label>
+                      <input type="text" name="hp" id="hp"/>
+                    </div>
+                    <div id="break"></div>
+                    <input type="hidden" name="list" value="vp1k6zjFpGp0YXDFQd4TQw"/>
+                    <input type="hidden" name="subform" value="yes"/>
+                    <br>
+                    <a href="javascript:void(0)"  title="" id="submit">Join Us</a>
+                  </div>
+                </form>
+                
+                <script type="text/javascript">
+                  $("#subscribe-form").keypress(function(e) {
+                      if(e.keyCode == 13) {
+                      e.preventDefault();
+                      $("#subscribe-form").submit();
+                      }
+                  });
+                  $("#submit").click(function(e){
+                    e.preventDefault(); 
+                    $("#subscribe-form").submit();
+                  });
+                </script>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-5 corps" style="z-index: -1">
+            <br><br>
+            <img class="top-image" src="mailbox.png">	
+          </div>
+        </div>
+      </div>
+
+      <div class="imagetest"> </div>
+    
+	<footer>
+		<h2 class="footertitle">Girl Genius</h2>
+		<div class = "side-by-side">
+			<div class = "text">
+		<p>A student-run nonprofit striving to connect, empower, and inspire womxn in STEAM worldwide.</p>
 		</div>
-	-->
-	</nav>
-	<body>
-		<div class="separator"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5 gauche first-col" align="left">
-					<h1>join our<br>mailing list</h1>
-					<br><br>
-					<div id="wrapper">
-						<h2><img src="https://cdn.glitch.com/9a69f7f7-63a6-4a5a-8dfd-05cfd800e732%2Fshivali%20attempts%20to%20make%20stickers%20%2B%20pins.png?v=1591944376350" title=""/>Receive opportunities, updates, and more!<h2>
-						<p>
-							<form action="https://postal.hackclub.com/subscribe" method="POST" accept-charset="utf-8" id="subscribe-form">
-								<div>
-									<input type="text" name="name" id="name" placeholder="Name" />
-								</div>
-								
-								<div>
-									<input type="email" name="email" id="email" placeholder="Email"/>
-								</div>
-								
-								<div id="hp">
-									<label for="hp">HP</label>
-									<input type="text" name="hp" id="hp"/>
-								</div>
-								<div id="break"></div>
-								<input type="hidden" name="list" value="vp1k6zjFpGp0YXDFQd4TQw"/>
-								<input type="hidden" name="subform" value="yes"/>
-								<br>
-								<a href="javascript:void(0)" title="" id="submit">SUBSCRIBE</a>
-								
-							</form>
-							
-							<script type="text/javascript">
-								$("#subscribe-form").keypress(function(e) {
-								    if(e.keyCode == 13) {
-										e.preventDefault();
-										$("#subscribe-form").submit();
-								    }
-								});
-								$("#submit").click(function(e){
-									e.preventDefault(); 
-									$("#subscribe-form").submit();
-								});
-							</script>
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-5 corps" style="z-index: -1">
-					<br><br>
-					<img class="top-image" src="mailbox.png">	
-				</div>
-			</div>
+		<div id = "links">
+			<a href="https://www.instagram.com/girlgeniusmag/" target="_blank">Instagram</a>
+			<a href="https://twitter.com/girlgeniusmag" target="_blank">Twitter</a>
+			<a href="https://girlgeniuscommunity.slack.com/join/shared_invite/zt-evdx4oef-kUQCH14S8lbBQkPuheIRsA" target="_blank">Slack</a>
+			<a href="https://www.facebook.com/girlgeniusmagazine/" target="_blank">Facebook</a>
+			<a href="https://www.linkedin.com/company/girl-genius-magazine/mycompany/" target="_blank">LinkedIn</a>
+      <a href="https://linktr.ee/girlgeniusmag" target="_blank">Events</a>
 		</div>
-		<div class="section">
-			<footer class="footer">
-			  <div class="container">
-				<div class="row footer-text">
-				  <div class="col-sm-4 text-left">
-					<h4 style="margin-bottom: 10px;">Girl Genius Magazine</h4>
-					<h4>
-					  <a href="https://www.instagram.com/girlgeniusmagazine" class="icons" target="_blank">
-						<img src="instagram.png" class="icon-img" width='22px' style="margin-right: 5px;">
-					  </a>
-					  <a href="https://www.facebook.com/girlgeniusmag" class="icons" target="_blank">
-						<img src="facebook.png" class="icon-img" width='22px' style="margin-right: 5px;">
-					  </a>
-					  <a href="https://twitter.com/girlgeniusmag" class="icons" target="_blank">
-						<img src="twitter.png" class="icon-img" width='22px'>
-					  </a>
-					</h4>
-					<p class="footer-desc">501(c)(3) connecting, inspiring, and connecting female change makers in STEAM worldwide since 2018.
-					  Fiscally sponsored by Hack Club Bank. Girl Genius was founded in December 2018 by Shivali Gulati. In
-					  2020,
-					  Shivali runs Girl Genius alongside her Co-Lead and future successor, Chloe Yan.</p>
-				  </div>
-				  <div class="col-sm-4 text-left quick-links">
-					<h4 class="quick-link">Quick Links</h4>
-					<a class="js-scroll-trigger quick-link footer-emails" href="#about">About</a> <br>
-					<a class=" js-scroll-trigger quick-link footer-emails" href="#projects">Projects</a> <br>
-					<a class="js-scroll-trigger quick-link footer-emails" href="#case-studies">Case Studies</a> <br>
-					<a class="js-scroll-trigger quick-link footer-emails" href="#services">Workshops</a> <br>
-					<a class="js-scroll-trigger quick-link footer-emails" href="#contact">Contact</a>
-				  </div>
-				  <div class="col-sm-5 col-md-4 text-left">
-					<h4>Contact Information</h4>
-					<p class="footer-emails">
-					  <i class="fa fa-envelope"></i> <b>Founder:</b><br>shivali@girlgeniusmag.tech<br>
-					  <i class="fa fa-envelope"></i> <b>Co-Lead:</b><br>chloe@girlgeniusmag.tech<br>
-					  <i class="fa fa-envelope"></i> <b> Partnerships:</b><br>agnes@girlgeniusmag.tech<br>
-					</p>
-				  </div>
-				  <div class="col-12 text-center"> Copyright ©2020 Girl Genius Magazine</div>
-				</div>
-			  </div>
-			</footer>
-		  </div>
-	</body>
+		</div><br>
+		
+		<br><br>
+	</footer>
+
+        
+
+        </div>
+    </body>
+  </div>
 </html>
 
