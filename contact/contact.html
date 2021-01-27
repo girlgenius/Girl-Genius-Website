@@ -1,0 +1,106 @@
+<!--
+   contact.html
+   
+   Copyright 2020 Sanya Gupta <sanyagupta@Sanyas-MacBook-Pro.local>
+   
+-->
+
+<DOCTYPE !html>
+ <html>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.8, minimum-scale=0.8">
+
+	<head>
+	  <meta charset="utf-8">
+	  <title>Girl Genius</title>
+	  <link href="contact.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/c5504591f3.js" crossorigin="anonymous"></script>
+	</head>
+
+<body>
+    <nav>
+	<!-- <li><p>GIRL GENIUS</p></li> -->
+      <ul class="header">
+        <li><a href="/">HOME</a></li>
+        <li><a href="about">ABOUT</a></li>
+        <li><a href="youtube">YOUTUBE</a></li>
+        <li><a href="blog">BLOG</a></li>
+        <li><a href="projects">PROJECTS</a></li>
+      </ul>
+    </nav>
+    
+    
+    <section class = "contact-form">
+		<div class = "grid-container">
+			<div id = "popup">
+			<div class="popup-top">
+			<div>
+			<h3>Let's Talk!</h3>
+				<form action="action_page.php">
+					
+					
+				<label for="To:">To:</label>
+				<!--<select id="To:" name="To:">
+				<option value="Founder:">Founder: shivali@girlgeniusmag.tech</option>
+				<option value="Co-Lead">Co-Lead: chloe@girlgeniusmag.tech</option>
+				<option value="Partnerships">Partnerships: agnes@girlgeniusmag.tech</option>
+				</select>-->
+				
+				<div class="custom-select" style="width:350px;">
+					<select>
+						<option value="0">Select...</option>
+						<option value="1">Founder: shivali@girlgeniusmag.tech</option>
+						<option value="2">Co-Lead: chloe@girlgeniusmag.tech</option>
+						<option value="3">Partnerships: agnes@girlgeniusmag.tech</option>
+					</select>
+				</div>
+				
+				
+    
+				<label for="name">Name</label>
+			<!--<br></br>-->
+				<input type="text" id="name" name="name" placeholder="Jane Doe">
+
+				<label for="email">Email</label>	
+				<input type="text" id="email" name="email" placeholder="example@gmail.com">
+				</div>
+				
+				<div>
+				<img src="black-innovators.png" alt="Black Innovators">
+				</div>
+			</div>
+			
+			<label for="message">Message</label>
+			<textarea id="message" name="message" placeholder="Type your message here..." style="height:200px"></textarea>
+			
+			<!-- <div id="sendbutton" style="text-align:center;"> -->
+			<input type="button" style="resize:horizontal; width:200px; margin:0px auto; display:block;" value="SEND">
+
+		</form>
+		</div>
+	</div>
+    </section>
+    
+    <br><br><br>
+	<footer>
+		<h2 >Girl Genius</h2>
+		<div class = "side-by-side">
+			<div class = "text">
+		<p>A student-run nonprofit striving to connect, empower, and inspire womxn in STEAM worldwide.</p>
+		</div>
+		<div id = "links">
+			<a href="https://www.instagram.com/girlgeniusmag/" target="_blank">Instagram</a>
+			<a href="https://twitter.com/girlgeniusmag" target="_blank">Twitter</a>
+			<a href="https://girlgeniuscommunity.slack.com/join/shared_invite/zt-evdx4oef-kUQCH14S8lbBQkPuheIRsA" target="_blank">Slack</a>
+			<a href="https://www.facebook.com/girlgeniusmagazine/" target="_blank">Facebook</a>
+			<a href="https://www.linkedin.com/company/girl-genius-magazine/mycompany/" target="_blank">LinkedIn</a>
+      <a href="https://linktr.ee/girlgeniusmag" target="_blank">Events</a>
+		</div>
+		</div><br>
+		<br><br>
+	</footer>
+
+	<script src="contact.js"></script>
+</body>
+</html> 

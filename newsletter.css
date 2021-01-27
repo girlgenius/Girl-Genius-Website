@@ -13,20 +13,43 @@
   src: url("SofiaProMedium.ttf");
 }
 
-#wrapper {
-	background: #ECF1FE;
-	width: 350px;
-	height: 300px;
-	position: absolute;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+body, html {
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("newsletterbackground.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper {
+  /* position: relative;
+  width: 2001px;
+  height: 2778px; */
+  
+  /* background: linear-gradient(180deg, #D5F0FF 0%, #F1DAFF 100%); */
+	background: #FFFFFF;
+  margin: auto;
+	width: 650px;
+	height: 675px;
+	position: relative; 
+  align-content: center; 
+	/* -webkit-border-radius: 7px;
+	-moz-border-radius: 5px; */
+	border-radius: 12px;
 	font-family: 'Sofia Pro', sans-serif;
-	box-shadow: 5px 5px 10px #C3DDF8, -4px -4px 6px #fff;
+	/* box-shadow: 5px 5px 10px #C3DDF8, -4px -4px 6px #fff; */
 }
 
 form, p {
-	float: left;
+	/* float: left; */
 	text-align: center;
 	font-size: 12px;
 	line-height: 18px;
@@ -41,7 +64,7 @@ form {
 form div { 
 	float: center;
 	margin-bottom: 10px;
-	margin-left: -45px;
+	/* margin-left: -45px; */
 }
 
 form div input {
@@ -53,42 +76,33 @@ form div input {
 	border: 1px solid #e2e2e2;
 	font-size: 15px;
 	padding: 0 5px;
-
+/* 
 	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
  	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
  	-ms-transition: border linear 0.2s, box-shadow linear 0.2s;
  	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
-	transition: border linear 0.2s, box-shadow linear 0.2s;
+	transition: border linear 0.2s, box-shadow linear 0.2s; */
 }
 
 form div input:focus{
 	border-color: #aec6d6;
-  	outline: 0;
-  	outline: thin dotted \9;
-
-  	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(11,193,244,.6);
- 	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(11,193,244,.6);
- 	box-shadow: 0px 0px 0px 3px rgba(202,229,247,1);
   
- 	-webkit-border-radius: 3px;
- 	-moz-border-radius: 3px;
- 	border-radius: 3px;
   
- 	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+ 	/* -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
  	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
  	-ms-transition: border linear 0.2s, box-shadow linear 0.2s;
  	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
- 	transition: border linear 0.2s, box-shadow linear 0.2s;
+ 	transition: border linear 0.2s, box-shadow linear 0.2s; */
 }
-
+/* 
 .uneditable {
 	-webkit-appearance: none; 
 	-moz-appearance: none; 
 	border: 1px solid #e2e2e2; 
 	height: 25px; 
 	background: #f7f7f7; 
-	padding: 0 5px;
-}
+	padding: 5px;
+} */
 
 form div input:focus {
 	outline: none;
@@ -101,17 +115,33 @@ form div input:focus {
 
 #brand h1 {
 	font-size: 14px;
+  
 	font-weight: normal;
 }
 
+.formtitle{
+  align-content: center;
+  margin-left: 70px;
+  color: #BB9BF8;
+  
+}
+
+.fields{
+  border-radius: 10px;
+  margin-left: -190px;
+  color: #614FD2;
+  background-color: #EFE7FF
+  
+}
+
 h2 {
-	font-weight: normal;
-	text-align: center;
-	padding: 20px;
+	font-weight: bold;
+
+	padding-top: 20px;
 	font-family: 'Sofia Pro', sans-serif;
 	color: #7B6BD9;
-	font-size: 22px;
-	margin-bottom: -5px;
+	font-size: 37px;
+	margin-bottom: -15px;
 	line-height: 18px;
 }
 
@@ -131,14 +161,15 @@ a:hover {
 	clear: both;
 	float: center;
 	text-align: center;
-	background: #7B6BD9;
+	background: #C0A3F9;
 	padding: 12px 24px;
 	cursor: pointer;
 	text-decoration: none;
 	margin-left: -45px;
 	color: #fff;
+  width: 500px;
 	border-radius: 100px;
-	font-size: 13px;
+	font-size: 18px;
 	transition: 0.2s;
 	font-family: "Sofia Pro Medium"
 }
@@ -168,32 +199,12 @@ a:hover {
 	float: left;
 }
 
-/*
-#error-msg{
-	display: none;
-	width: 270px;
-	margin-left: 17px;
-	padding: 10px 15px;
-	background-color: #f2dede;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	color: #333333;
-}
-*/
-
-/* Responsive */
-
 @viewport {
 	width: device-width ;
 	zoom: 1.0 ;
   }
 
 .navbar {
-    -webkit-transition: all 0.6s ease-out;
-    -moz-transition: all 0.6s ease-out;
-    -o-transition: all 0.6s ease-out;
-    -ms-transition: all 0.6s ease-out;
 	transition: all 0.6s ease-out;
 	font-family: 'Sofia Pro';
 	font-weight: 600;
@@ -207,12 +218,15 @@ a:hover {
 .navbar {
     height: 5rem;
     color: #8d7fe8 !important;
+    font-family: 'Sofia Pro';
+	  font-weight: bold;
 	width: 100%;
 }
 
 a.navbar-brand {
 	color: #8d7fe8 !important;
-	font-family: 'Sofia Pro';
+  font-family: 'Sofia Pro';
+	font-weight: bold;
 }
 
 .navbar-nav{
@@ -235,6 +249,24 @@ a.nav-link {
 	color: #8d7fe8 !important;
 }
 
+.purple-subtitle{
+  margin-left: 60px;
+  color: #8C56ED
+}
+
+.black-subtitle{
+  margin-left: 40px;
+}
+
+.header{
+  font-family: 'Sofia Pro';
+	font-weight: bold;
+}
+
+.imagetest {
+  height: 100px;
+  background: url("envelopepurple.jpg");
+}
 
 h1 {
 	font-family: 'Sofia Pro SemiBold';
@@ -246,6 +278,18 @@ h1 {
 	margin-top: -70px;
 	text-shadow: 3px 3px 3px #abcff2, -3px -3px 3px #f9fcff;
 }
+
+.fieldtitles{
+  font-size: 15px;
+  margin-left: -370px;
+  color:#614FD2
+  
+}
+
+.forminputs{
+  align-content: left;
+}
+
 
 body {
 	background-image: url(newsletter-bg.png);
@@ -300,8 +344,14 @@ h4 {
 	font-family: 'Sofia Pro';
 }
 
+.footertitle{
+  font-weight: normal;
+  font-family: 'Sofia Pro', sans-serif;
+}
+
+
 .footer {
-	font-family: 'Sofia Pro';
+	  font-family: 'Sofia Pro';
     position: bottom;
     left: 0;
     bottom: 0;
@@ -375,6 +425,8 @@ h4 {
 	}
 	.navbar {
 		margin-top: -85px;
+    font-family: 'Sofia Pro';
+	  font-weight: bold;
 	}
 	.top-image {
 		width: 50%;
@@ -395,3 +447,134 @@ h4 {
 	}
 }
 
+
+nav {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  z-index: 100;
+}
+
+ul {
+  float: right;
+  margin-right: 20px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  text-align: right;
+  font-size: 16px;
+  font-family: 'Sofia Medium';
+  color: #BF9FF8;
+  line-height: 75px;
+  padding: 0 20px;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  color: #8E57F0;
+}
+
+
+footer{
+	width: 100%;
+	background-image: url(footer.png);
+	background-size:cover;
+	position: absolute;
+	background-repeat: no-repeat;
+}
+footer .side-by-side{
+	display: flex;
+	flex-direction: row;
+}
+footer .text{
+	display: flexbox;
+	width: 30%;
+	color: white;
+	margin-left: 100px;
+
+}
+footer h2{
+	margin-left: 100px;
+	padding-top: 12%;
+	top: 50px;
+	color: white;
+	font-size: 2.5rem;
+	font-family: "Sofia SemiBold";
+}
+footer p{
+	color: white;
+	font-size: 1.1rem;
+	line-height: 1.6;
+}
+footer #links{
+	margin-left: 150px;
+	display: grid;
+	font-size: 1.2rem;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 80px;
+	grid-row-gap: 10px;
+}
+footer #links a{
+	font-family: "Sofia Medium";
+  font-weight:normal;
+	text-decoration: none;
+	color: white;
+	transition: text-decoration .3s;
+}
+.madeby{
+    font-size: 1rem;
+  }
+@media only screen and (max-width: 1000px) {
+  footer .text{
+    margin-left: 70px;
+  }
+  footer h2{
+    margin-left: 70px;
+    font-size: 2.2rem;
+  }
+  footer p{
+    font-size: 1.1rem;
+  }
+  footer #links a{
+    font-size: 1.1rem;
+  }
+  footer #links{
+    margin-left: 100px;
+  }
+  .madeby{
+    font-size: .9rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  footer .text{
+    margin-left: 60px;
+  }
+  footer h2{
+    padding-top: 15%;
+    margin-left: 60px;
+    font-size: 2rem;
+  }
+  footer p{
+    font-size: 1rem;
+  }
+  footer #links a{
+    font-size: 1rem;
+  }
+  footer #links{
+    margin-left: 100px;
+    grid-column-gap: 50px;
+    grid-row-gap: 5px;
+  }
+  .madeby{
+    font-size: .8rem;
+  }
+}
