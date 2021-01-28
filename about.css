@@ -109,8 +109,8 @@ h1{
 	width: 50%;
 	transition: transform .4s ease;
 }
-#outreach-img: hover{
-  transform: rotate(5deg);
+#outreach-img:hover{
+  transform: scale(1.05);
 }
 
 #magazine-img{
@@ -126,8 +126,8 @@ h1{
 	width: 50%;
 	transition: transform .4s ease;
 }
-#magazine-img: hover{
-  transform: scale(1.05);
+#magazine-img:hover{
+  transform: rotate(4deg);
 }
 
 h2{
@@ -274,6 +274,15 @@ h2{
 	transition: transform .4s ease;
 	max-width: 130px;
 	margin: 15px 20px;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none;
+}
+
+.unselect{
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */
 	-khtml-user-select: none; /* Konqueror HTML */
