@@ -239,7 +239,7 @@ h1{
 		width: 50%;
 	}
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 	.align4{
 		display: block;
 	}
@@ -291,8 +291,8 @@ h1{
 
 .headshot{
 	transition: transform .4s ease;
-	width: 130px; /* width of container */
-    height: 130px; /* height of container */
+	width: 125px; /* width of container */
+    height: 125px; /* height of container */
     border-radius: 100px;
     object-fit: cover;
     object-position: 50% 40%; /* try 20px 10px */ 
@@ -302,6 +302,8 @@ h1{
 	-moz-user-select: none; /* Old versions of Firefox */
 	-ms-user-select: none; /* Internet Explorer/Edge */
 	user-select: none;
+	filter: drop-shadow(0px 0px 4px #EEC4FC);
+	/*border: 5px solid #EEE4FE;*/
 }
 
 .unselect{
