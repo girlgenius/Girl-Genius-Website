@@ -151,11 +151,13 @@ h1{
 }
 
 .name{
+	margin-top: 6px;
 	font-family: "Sofia SemiBold";
 	font-size: 1.1rem;
 }
 
 .role{
+	margin-top: -4px;
 	font-family: "Sofia Pro";
 	font-size: 1.1rem;
 }
@@ -303,6 +305,7 @@ h1{
 	-ms-user-select: none; /* Internet Explorer/Edge */
 	user-select: none;
 	filter: drop-shadow(0px 0px 4px #EEC4FC);
+
 	/*border: 5px solid #EEE4FE;*/
 }
 
