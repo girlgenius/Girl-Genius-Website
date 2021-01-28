@@ -143,7 +143,7 @@ h1{
 	font-family: "Sofia Medium Italic";
 }
 
-h2{
+.team-box h2{
 	font-family: "Sofia SemiBold";
 	color: #7B6BD9;
 	font-size: 2.3rem;
@@ -152,7 +152,6 @@ h2{
 
 .name{
 	font-family: "Sofia SemiBold";
-	margin-bottom: 3px;
 	font-size: 1.1rem;
 }
 
@@ -292,8 +291,11 @@ h2{
 
 .headshot{
 	transition: transform .4s ease;
-	max-width: 130px;
-	margin: 15px 20px;
+	width: 130px; /* width of container */
+    height: 130px; /* height of container */
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: 50% 40%; /* try 20px 10px */ 
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */
 	-khtml-user-select: none; /* Konqueror HTML */
@@ -315,5 +317,105 @@ h2{
   transform: scale(1.05);
 }
 
+footer{
+	width: 100%;
+	background-image: url(home/footer.png);
+	background-size:cover;
+	position: absolute;
+	background-repeat: no-repeat;
+}
+footer .side-by-side{
+	display: flex;
+	flex-direction: row;
+}
+footer .text{
+	display: flexbox;
+	width: 30%;
+	color: white;
+	margin-left: 100px;
+	font-family: "Sofia Medium";
+
+}
+footer h2{
+	margin-left: 100px;
+	padding-top: 12%;
+	top: 50px;
+	color: white;
+	font-size: 2.5rem;
+	font-family: "Sofia SemiBold";
+}
+footer p{
+	color: white;
+	font-size: 1.1rem;
+	line-height: 1.6;
+}
+footer #links{
+	margin-left: 150px;
+	display: grid;
+	font-size: 1.2rem;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 80px;
+	grid-row-gap: 10px;
+}
+footer #links a{
+	font-family: "Sofia Medium";
+	text-decoration: none;
+	color: white;
+	transition: text-decoration .3s;
+}
+.madeby{
+    font-size: 1rem;
+  }
+@media only screen and (max-width: 1000px) {
+  footer .text{
+    margin-left: 70px;
+  }
+  footer h2{
+    margin-left: 70px;
+    font-size: 2.2rem;
+  }
+  footer p{
+    font-size: 1.1rem;
+  }
+  footer #links a{
+    font-size: 1.1rem;
+  }
+  footer #links{
+    margin-left: 100px;
+  }
+  .madeby{
+    font-size: .9rem;
+  }
+}
+p {
+  font-family: 'Sofia Medium';
+  font-size: 20px;
+  color: #36303b;
+  line-height: 30px;
+}
+@media only screen and (max-width: 800px) {
+  footer .text{
+    margin-left: 60px;
+  }
+  footer h2{
+    padding-top: 15%;
+    margin-left: 60px;
+    font-size: 2rem;
+  }
+  footer p{
+    font-size: 1rem;
+  }
+  footer #links a{
+    font-size: 1rem;
+  }
+  footer #links{
+    margin-left: 100px;
+    grid-column-gap: 50px;
+    grid-row-gap: 5px;
+  }
+  .madeby{
+    font-size: .8rem;
+  }
+}
 
 
