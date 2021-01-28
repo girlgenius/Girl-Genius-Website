@@ -14,8 +14,17 @@
 }
 
 @font-face {
+  font-family: "Sofia Black"; 
+  src: url("SofiaProBlack.ttf");
+}
+
+@font-face {
   font-family: "Sofia Medium"; 
   src: url("SofiaProMedium.ttf");
+}
+@font-face {
+  font-family: "Sofia Medium Italic"; 
+  src: url("SofiaProMediumItalic.otf");
 }
 
 * {
@@ -130,6 +139,10 @@ h1{
   transform: rotate(4deg);
 }
 
+.email{
+	font-family: "Sofia Medium Italic";
+}
+
 h2{
 	font-family: "Sofia SemiBold";
 	color: #7B6BD9;
@@ -138,7 +151,7 @@ h2{
 }
 
 .name{
-	font-family: "Sofia Medium";
+	font-family: "Sofia SemiBold";
 	margin-bottom: 3px;
 	font-size: 1.1rem;
 }
@@ -269,6 +282,13 @@ h2{
 	margin-bottom: 20px;
 }
 
+.individual-box a{
+	display: block;
+	color: #0088FD;
+	font-family: "Sofia Medium Italic";
+	padding-top: 2px;
+	font-size: .9rem;
+}
 
 .headshot{
 	transition: transform .4s ease;
