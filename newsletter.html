@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.8, minimum-scale=0.8">
 
 <head>
@@ -34,103 +32,86 @@
 </head>
 
 <html>
-  <div style="background-image: url('newsletterbackground.jpg');">
-    <nav class="navbar navbar-expand-sm navbar-dark" id="mainNav">
-    
-      <nav>
-        <ul class="header">
-          <li><a href="/">HOME</a></li>
-          <li><a href="about">ABOUT</a></li>
-          <li><a href="youtube">YOUTUBE</a></li>
-          <li><a href="blog">BLOG</a></li>
-          <li><a href="projects">PROJECTS</a></li>
-        </ul>
-      </nav>
-      </div>
-
+	<body>
+		<nav>
+      <ul class="header">
+        <li><a href="/">HOME</a></li>
+				<li><a href="about">ABOUT</a></li>
+        <li><a href="attps://www.youtube.com/channel/UCznAuoKVAA8hBE0BzmAWC_w">YOUTUBE</a></li>
+        <li><a href="https://medium.com/girl-genius-magazine">BLOG</a></li>
+        <!--<li><a href="projects">PROJECTS</a></li>-->
+      </ul>
     </nav>
-    <body> 
-      <div class="separator"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 gauche first-col" align="left">
-            
-            <br><br>
-            <div class="wrapper">
-              <h2 class= "formtitle">Subscribe to our Newsletter!<h2>
-                <h4 class="purple-subtitle">for STEAM internships / awards / scholarships / advice. </h4>
-                <h4 class="black-subtitle" >Join a community of over 4,300 females changemakers. We can’t wait to support your journey of personal growth in STEAM! </h4>
-              <p>
-                <form action="https://postal.hackclub.com/subscribe" method="POST" accept-charset="utf-8" id="subscribe-form">
-                  <div class="forminputs" >
-                    <label class="fieldtitles" for="name">Name</label><br>
-                    <!--<br></br>-->
-                      <input class="fields" type="text" id="name" name="name" placeholder="Jane Doe">
-                      <br><br>
-                      <label class="fieldtitles"  for="email">Email</label>	<br>
-                      <input class="fields" type="text" id="email" name="email" placeholder="example@gmail.com">
-                  </div>
-                  
-                  <div class="formbutton">
-                    <div id="hp" >
-                      <label  for="hp">HP</label>
-                      <input type="text" name="hp" id="hp"/>
-                    </div>
-                    <div id="break"></div>
-                    <input type="hidden" name="list" value="vp1k6zjFpGp0YXDFQd4TQw"/>
-                    <input type="hidden" name="subform" value="yes"/>
-                    <br>
-                    <a href="javascript:void(0)"  title="" id="submit">Join Us</a>
-                  </div>
-                </form>
-                
-                <script type="text/javascript">
-                  $("#subscribe-form").keypress(function(e) {
-                      if(e.keyCode == 13) {
-                      e.preventDefault();
-                      $("#subscribe-form").submit();
-                      }
-                  });
-                  $("#submit").click(function(e){
-                    e.preventDefault(); 
-                    $("#subscribe-form").submit();
-                  });
-                </script>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-5 corps" style="z-index: -1">
-            <br><br>
-            <img class="top-image" src="mailbox.png">	
-          </div>
-        </div>
-      </div>
+		<div class="separator"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 gauche first-col" align="left">
+					<h1>Subscribe to<br>our newsletter!</h1>
+					<h3>Internships&ensp;|&emsp;Awards&emsp;|&emsp;Scholarships&emsp;|&emsp;Advice<h3>
+					<br><br>
+					<div id="wrapper">
+						<h2><img src="https://cdn.glitch.com/9a69f7f7-63a6-4a5a-8dfd-05cfd800e732%2Fshivali%20attempts%20to%20make%20stickers%20%2B%20pins.png?v=1591944376350" title=""/>Join a community of 4,300+ female changemakers<h2>
+						<p>
+							<form action="https://postal.hackclub.com/subscribe" method="POST" accept-charset="utf-8" id="subscribe-form">
+								<div>
+									<h4>NAME</h4>
+									<input type="text" name="name" id="name" placeholder="Jane Doe" />
+								</div>
+								<br>
+								<div>
+									<h4>EMAIL</h4>
+									<input type="email" name="email" id="email" placeholder="janedoe@gmail.com"/>
+								</div>
 
-      <div class="imagetest"> </div>
-    
-	<footer>
-		<h2 class="footertitle">Girl Genius</h2>
-		<div class = "side-by-side">
-			<div class = "text">
-		<p>A student-run nonprofit striving to connect, empower, and inspire womxn in STEAM worldwide.</p>
+								<div id="hp">
+									<label for="hp">HP</label>
+									<input type="text" name="hp" id="hp"/>
+								</div>
+								<div id="break"></div>
+								<input type="hidden" name="list" value="vp1k6zjFpGp0YXDFQd4TQw"/>
+								<input type="hidden" name="subform" value="yes"/>
+								<br>
+								<a href="javascript:void(0)" title="" id="submit">JOIN US</a>
+
+							</form>
+
+							<script type="text/javascript">
+								$("#subscribe-form").keypress(function(e) {
+								    if(e.keyCode == 13) {
+										e.preventDefault();
+										$("#subscribe-form").submit();
+								    }
+								});
+								$("#submit").click(function(e){
+									e.preventDefault();
+									$("#subscribe-form").submit();
+								});
+							</script>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-5 corps" style="z-index: -1">
+					<br><br>
+					<img class="top-image" src="mailbox.png">
+				</div>
+			</div>
 		</div>
-		<div id = "links">
-			<a href="https://www.instagram.com/girlgeniusmag/" target="_blank">Instagram</a>
-			<a href="https://twitter.com/girlgeniusmag" target="_blank">Twitter</a>
-			<a href="https://girlgeniuscommunity.slack.com/join/shared_invite/zt-evdx4oef-kUQCH14S8lbBQkPuheIRsA" target="_blank">Slack</a>
-			<a href="https://www.facebook.com/girlgeniusmagazine/" target="_blank">Facebook</a>
-			<a href="https://www.linkedin.com/company/girl-genius-magazine/mycompany/" target="_blank">LinkedIn</a>
-      <a href="https://linktr.ee/girlgeniusmag" target="_blank">Events</a>
-		</div>
-		</div><br>
-		
-		<br><br>
-	</footer>
-
-        
-
-        </div>
-    </body>
-  </div>
+		<footer style="margin-top: 300px;">
+			<h2 style="left">Girl Genius</h2>
+			<div class = "side-by-side">
+				<div class = "text">
+			<p>A student-run nonprofit striving to connect, empower, and inspire womxn in STEAM worldwide.</p>
+			</div>
+			<div id = "links">
+				<a href="https://www.instagram.com/girlgeniusmag/" target="_blank">Instagram</a>
+				<a href="https://twitter.com/girlgeniusmag" target="_blank">Twitter</a>
+				<a href="https://girlgeniuscommunity.slack.com/join/shared_invite/zt-evdx4oef-kUQCH14S8lbBQkPuheIRsA" target="_blank">Slack</a>
+				<a href="https://www.facebook.com/girlgeniusmagazine/" target="_blank">Facebook</a>
+				<a href="https://www.linkedin.com/company/girl-genius-magazine/mycompany/" target="_blank">LinkedIn</a>
+	      <a href="https://linktr.ee/girlgeniusmag" target="_blank">Events</a>
+			</div>
+			</div><br>
+			<br><br>
+		</footer>
+	</body>
 </html>
-
