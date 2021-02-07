@@ -50,7 +50,6 @@ form {
 form div {
 	float: center;
 	margin-bottom: 10px;
-	margin-left: -45px;
 }
 
 form div input {
@@ -119,10 +118,9 @@ form div input:focus {
 	text-align: center;
 	padding: 20px;
 	font-family: 'Sofia Pro', sans-serif;
-	color: #dac7ff;
-	font-size: 18px;
-	margin-bottom: -25px;
-  margin-top: 20px;
+	color: #b18df4;
+  margin-top: -10px;
+	margin-bottom: -10px;
 	line-height: 15px;
 }
 
@@ -142,12 +140,11 @@ a:hover {
 	clear: both;
 	float: center;
 	text-align: center;
-	background: #f3edff;
+	background: #8E57F0;
 	padding: 12px 24px;
 	cursor: pointer;
 	text-decoration: none;
-	margin-left: -45px;
-	color: #8F56F0;
+	color: #f3edff;
 	border-radius: 100px;
 	font-size: 13px;
 	transition: 0.2s;
@@ -155,9 +152,9 @@ a:hover {
 }
 
 #submit:hover {
-  	color: #7B6BD9;
 	text-decoration: none;
-	background-color: #fff;
+  color: #fff;
+	background-color: #b18df4;
 }
 
 #hp {
@@ -240,18 +237,17 @@ ul li a:hover {
 h1 {
 	font-family: 'Sofia Pro SemiBold';
 	font-weight: bold;
-	font-size: 50px;
-	color: #f3edff;
+	font-size: 40px;
+	color: #8E57F0;
 	text-align: center;
-	line-height: 50px;
-	margin-top: -70px;
+	line-height: 40px;
+	margin-top: -90px;
 }
 
 h3 {
 	font-family: 'Sofia Pro Medium';
 	font-weight: bold;
-	font-size: 18px;
-	color: #dac7ff;
+	color: #b18df4;
 	text-align: center;
 	line-height: 25px;
 }
@@ -315,9 +311,9 @@ h4 {
   font-weight: 400;
   font-size: 14px;
   line-height: 5px;
-  color: #f3edff;
+  color: #8E57F0;
   text-align: left;
-	margin-left: 90px;
+	margin-left: 67.5px;
 }
 
 footer{
@@ -441,6 +437,12 @@ footer #links a{
 	.top-image {
 		display:none;
 	}
+  h3 {
+    font-size: 12px;
+  }
+  .container h2 {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -453,4 +455,10 @@ footer #links a{
 	.top-image {
 		width: 75%;
 	}
+  h3 {
+    font-size: 18px;
+  }
+  .container h2 {
+    font-size: 16px;
+  }
 }
