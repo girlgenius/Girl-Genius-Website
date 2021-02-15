@@ -132,9 +132,137 @@ input:checked + label + .content {
 }
 }
 
-.girl-reading-img {
-    float:left;
-    display:inline-block;
-    margin:10px;
-   
+
+
+footer{
+	width: 100%;
+	background-color: #FBD28C;
+	background-size:cover;
+	position: absolute;
+	background-repeat: no-repeat;
+}
+footer .side-by-side{
+	display: flex;
+	flex-direction: row;
+}
+footer .text{
+	display: flexbox;
+	width: 30%;
+	color: white;
+	margin-left: 100px;
+
+}
+footer h2{
+	margin-left: 100px;
+	padding-top: 12%;
+	top: 50px;
+	color: white;
+	font-size: 2.5rem;
+	font-family: "Sofia Pro SemiBold";
+}
+footer p{
+	color: white;
+	font-size: 1.1rem;
+	line-height: 1.6;
+}
+footer #links{
+	margin-left: 150px;
+	display: grid;
+	font-size: 1.2rem;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 80px;
+	grid-row-gap: 10px;
+}
+footer #links a{
+	font-family: "Sofia Pro Medium";
+	text-decoration: none;
+	color: white;
+	transition: text-decoration .3s;
+}
+.madeby{
+    font-size: 1rem;
+  }
+@media only screen and (max-width: 1000px) {
+  footer .text{
+    margin-left: 70px;
+  }
+  footer h2{
+    margin-left: 70px;
+    font-size: 2.2rem;
+  }
+  footer p{
+    font-size: 1.1rem;
+  }
+  footer #links a{
+    font-size: 1.1rem;
+  }
+  footer #links{
+    margin-left: 100px;
+  }
+  .madeby{
+    font-size: .9rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  footer .text{
+    margin-left: 60px;
+  }
+  footer h2{
+    padding-top: 15%;
+ 
+    font-size: 2rem;
+  }
+  footer p{
+    font-size: 1rem;
+  }
+  footer #links a{
+    font-size: 1rem;
+  }
+  footer #links{
+    margin-left: 100px;
+    grid-column-gap: 50px;
+    grid-row-gap: 5px;
+  }
+  .madeby{
+    font-size: .8rem;
+  }
+}
+
+
+.icons {
+	text-decoration: none;
+}
+
+.icons:hover {
+	text-decoration: none;
+}
+
+.icon-img {
+	transition: 0.2s;
+}
+
+.icon-img:hover {
+	transform: scale(1.1);
+}
+
+@media screen and (max-width: 999px) {
+	.first-col {
+		padding: 40px;
+	}
+	.navbar {
+		margin-top: -85px;
+	}
+	.top-image {
+		display:none;
+	}
+  h3 {
+    font-size: 12px;
+  }
+  .container h2 {
+    font-size: 12px;
+  }
+}
+
+.foothead{
+  align-content:left;
 }
