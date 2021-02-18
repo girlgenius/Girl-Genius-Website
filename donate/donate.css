@@ -1,17 +1,17 @@
 body {background-color: #E5E5FF;}
 @font-face {
   font-family: "Sofia Pro";
-  src: url("SofiaProRegular.ttf");
+  src: url("../SofiaProRegular.ttf");
 }
 
 @font-face {
   font-family: "Sofia Pro SemiBold";
-  src: url("SofiaProSemiBold.ttf");
+  src: url("../SofiaProSemiBold.ttf");
 }
 
 @font-face {
   font-family: "Sofia Pro Medium";
-  src: url("SofiaProMedium.ttf");
+  src: url("../SofiaProMedium.ttf");
 }
 
 body, html {
@@ -89,7 +89,7 @@ h5 {
 
 .newsponsubt{
   color: black;
-  
+
 }
 
 .newsponbtn{
@@ -182,10 +182,9 @@ h5 {
   transition: 0.3s;
   font-size: 16px;
 }
-
 footer{
 	width: 100%;
-	background-color: #FBD28C;
+	background-image: url(../home/footer.png);
 	background-size:cover;
 	position: absolute;
 	background-repeat: no-repeat;
@@ -258,7 +257,7 @@ footer #links a{
   }
   footer h2{
     padding-top: 15%;
- 
+    margin-left: 60px;
     font-size: 2rem;
   }
   footer p{
